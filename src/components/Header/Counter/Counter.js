@@ -5,12 +5,14 @@ const Counter = () => {
   const { month, day, hour } = timeRemaining();
 
   return (
-    <Container >
+   <Container fluid className='counter-container'>
+     <Container >
       <div className='counter'>
         <p className='counter-title px-2'>COUNTDOWN TO RWC 2023</p>
         <p><span>{month}</span> Months <span>{day}</span> Days <span>{hour}</span> hours</p>
       </div>
     </Container>
+   </Container>
   )
 }
 

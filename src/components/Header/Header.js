@@ -3,20 +3,48 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Counter from './Counter/Counter.js';
+import { LinkContainer } from 'react-router-bootstrap';
+import rwc2023logo from '../../assets/images/rwc2023logo.svg'
+import logoHolder from '../../assets/images/logoHolder.png'
+
 
 function Header() {
+
+
   return (
     <Container fluid className='p-0'>
       <Counter />
-      <Navbar bg="light" expand="lg">
+      <Navbar expand="lg">
         <Container>
-          <Navbar.Brand href="/">RWCFrance23</Navbar.Brand>
+          <LinkContainer to="/">
+            <Navbar.Brand >
+              <div className='logo-container'>
+                <div className='logo-text logo-mobile'>
+                  <p>RUGBY</p>
+                  <p style={{ fontWeight: 700, fontSize: "0.7rem" }}>WORLD CUP</p>
+                  <p>FRANCE 2023</p>
+                </div>
+                <div className='logo-holder'>
+                  <img src={rwc2023logo} width="80px" />
+                  <div className='logo-text'>
+                    <p>RUGBY</p>
+                    <p style={{ fontWeight: 700, fontSize: "0.7rem" }}>WORLD CUP</p>
+                    <p>FRANCE 2023</p>
+                  </div>
+                </div>
+              </div>
+            </Navbar.Brand>
+          </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/matches">MATCHES</Nav.Link>
-              <Nav.Link href="teams">TEAMS</Nav.Link>
-              <NavDropdown className='ms-auto' title="Tickects" id="basic-nav-dropdown">
+              <LinkContainer to='/matches'>
+                <Nav.Link >MATCHES</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/teams">
+                <Nav.Link >TEAMS</Nav.Link>
+              </LinkContainer>
+              <NavDropdown className='ms-auto' title="MORE" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
