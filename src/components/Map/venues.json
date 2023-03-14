@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Ol Stadium",
+    "city": "Lyon",
+    "longitude": "45.765429678393254",
+    "latitude": "4.982007547490513"
+  },
+  {
+    "id": 2,
+    "name": "Stade De Bordeaux",
+    "city": "Bordeaux",
+    "longitude": "44.897495057651454",
+    "latitude": "-0.5615433793096075"
+  },
+  {
+    "id": 3,
+    "name": "Stade Pierre Mauroy",
+    "city": "Lille",
+    "longitude": "50.61215048093813",
+    "latitude": "3.1304362637662453"
+  },
+  {
+    "id": 4,
+    "name": "Stade Vélodrome",
+    "city": "Marseille",
+    "longitude": "43.27014713832059",
+    "latitude": "5.395737828283878"
+  },
+  {
+    "id": 5,
+    "name": "Stade de la Beaujoire",
+    "city": "Nantes",
+    "longitude": "47.2561761779730",
+    "latitude": "-1.5246535362302285"
+  },
+  {
+    "id": 6,
+    "name": "Stade de Nice",
+    "city": "Nice",
+    "longitude": "43.77252155555119",
+    "latitude": "7.179903654753725"
+  },
+  {
+    "id": 7,
+    "name": "Stade de France",
+    "city": "Saint Denis",
+    "longitude": "48.92462834452792",
+    "latitude": "2.360175236278099"
+  },
+  {
+    "id": 8,
+    "name": "Stade Geoffroy-Guichard",
+    "city": "Saint Etienne",
+    "longitude": "45.46095386357343",
+    "latitude": "4.390097462543394"
+  },
+  {
+    "id": 9,
+    "name": "Stade de Tolouse",
+    "city": "Tolouse",
+    "longitude": "43.58346813525796",
+    "latitude": "1.4340480061851684"
+  }
+]

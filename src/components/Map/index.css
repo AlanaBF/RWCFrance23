@@ -1,0 +1,5 @@
+.leaflet-container {
+    height: 500px !important;
+    background-color: blue;
+    max-width: 600px;
+}
