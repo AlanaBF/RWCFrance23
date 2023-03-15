@@ -5,6 +5,7 @@ import Home from './pages/Home/Home.js';
 import NotFound from './pages/NotFound/NotFound.js';
 import Teams from "./pages/Teams/Teams.js";
 import TeamInfo from './pages/TeamInfo/TeamInfo.js';
+import Matches from './pages/Matches/Matches.js';
 
 
 const App = () => {
@@ -12,8 +13,9 @@ const App = () => {
     createRoutesFromElements(
       <Route path="/" element={<Root />}>
         <Route path="/" index element={<Home />} />
-        <Route path="/teams" index element={<Teams />} />
-        <Route path="/teams/:id" index element={<TeamInfo />} />
+        <Route path="/teams" element={<Teams />} />
+        <Route path="/teams/:id" element={<TeamInfo />} />
+        <Route path="/matches" element={<Matches />} />
 
         <Route path='*' element={<NotFound />} />
       </Route>

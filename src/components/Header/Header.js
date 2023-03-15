@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Counter from './Counter/Counter.js';
 import { LinkContainer } from 'react-router-bootstrap';
 import rwc2023logo from '../../assets/images/rwc2023logo.svg'
-import logoHolder from '../../assets/images/logoHolder.png'
+
 
 
 function Header() {
