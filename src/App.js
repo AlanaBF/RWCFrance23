@@ -1,6 +1,6 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Outlet, Route } from "react-router-dom";
 import Header from './components/Header/Header.js';
-import Footer from './components/Footer/Footer.js';
+import StickyFooter from './components/Footer/StickyFooter.js';
 import Home from './pages/Home/Home.js';
 import NotFound from './pages/NotFound/NotFound.js';
 import Teams from "./pages/Teams/Teams.js";
@@ -33,7 +33,7 @@ const Root = () => {
         <Outlet />
       </div>
       <div>
-        <Footer />
+        <StickyFooter />
       </div>
     </>
   )
