@@ -25,7 +25,7 @@ function Header() {
                   <p>FRANCE 2023</p>
                 </div>
                 <div className='logo-holder'>
-                  <img src={rwc2023logo} width="80px" />
+                  <img src={rwc2023logo} alt='logo' width="80px" />
                   <div className='logo-text'>
                     <p>RUGBY</p>
                     <p style={{ fontWeight: 700, fontSize: "0.7rem" }}>WORLD CUP</p>
