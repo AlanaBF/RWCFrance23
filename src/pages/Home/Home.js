@@ -1,7 +1,15 @@
+import NewsCarousel from '../../components/carousel';
+import getNews from '../../utils/api_news';
 
 const Home = () => {
+  getNews()
   return (
-    <div>Home</div>
+    <div>
+        <h1>Home</h1>
+        <NewsCarousel />
+    </div>
+    
+
   )
 }
 
