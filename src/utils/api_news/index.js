@@ -2,7 +2,7 @@ import axios from "axios";
 async function getNews() {
   const options = {
     method: "GET",
-    url: "https://bing-news-search1.p.rapidapi.com/news/srch",
+    url: "https://bing-news-search1.p.rapidapi.com/news/search",
     params: {
       q: "rugby world cup",
       count: "3",
@@ -25,7 +25,7 @@ async function getNews() {
       return response.data.value;
     })
     .catch(function (error) {
-      // console.error(error);
+      console.error('Here we found this: ' + error);
       return error
     });
 }
