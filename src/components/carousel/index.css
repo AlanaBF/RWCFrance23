@@ -1,21 +1,29 @@
 .news-section {
     width: 90%;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 40px 0px;
 }
-.carousel-control-next, .carousel-control-prev {
+
+.carousel-control-next,
+.carousel-control-prev {
     width: 20px !important;
     height: 20px !important;
-    background: red !important;
+    background: #FF3000 !important;
     margin: auto 0;
+    opacity: 0.8;
 }
+
 .carousel .slide {
     height: auto;
-    background: purple;
+    background: #19194B;
+    border-radius: 20px;
 }
+
 .carousel-inner {
     height: 100%;
+    color: aliceblue;
 }
+
 .new {
     height: 300px !important;
     margin: auto 0;
@@ -25,15 +33,19 @@
     justify-content: space-around;
     align-items: center;
 }
+
 .new-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
+
 .carousel-item img {
     height: 200px;
-    width: 190 px;
+    border-radius: 10px;
 }
+
 .carousel-caption {
     left: 0px;
 }
+
