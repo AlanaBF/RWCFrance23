@@ -1,14 +1,14 @@
 import NewsCarousel from '../../components/carousel';
 import getNews from '../../utils/api_news';
-
+import HeroImage from '../../components/Hero/Hero';
 const Home = () => {
   getNews()
   return (
     <div>
-        <h1>Home</h1>
-        <NewsCarousel />
+      <HeroImage />
+      <NewsCarousel />
     </div>
-  
+
   )
 }
 

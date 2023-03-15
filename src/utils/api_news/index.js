@@ -22,6 +22,7 @@ async function getNews() {
   return await axios
     .request(options)
     .then(function (response) {
+      console.log(response)
       return response;
     })
     .catch(function (error) {
