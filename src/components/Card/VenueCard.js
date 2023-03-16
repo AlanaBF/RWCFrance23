@@ -2,7 +2,7 @@ import React from "react";
 
 
 function VenueCard({ venue }) {
-    const { name, image, city, capacity, about } = venue
+    const { name, image, city, capacity } = venue
 
     return (
         <div className="card">
@@ -19,9 +19,6 @@ function VenueCard({ venue }) {
                     </div>
                     <div>
                         <h4>Stadium Capacity: {capacity} </h4>
-                    </div>
-                    <div>
-                        <h5>{about}</h5>
                     </div>
                 </ul>
             </div>
