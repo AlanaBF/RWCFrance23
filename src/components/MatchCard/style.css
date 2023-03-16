@@ -1,0 +1,63 @@
+.match-card-container {
+  width: 100%;
+  background: var(--bg-darkblue);
+  margin: 3px 0;
+  color: #fafafa;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border-radius: 25px;
+}
+
+.match-card-teams {
+  text-transform: uppercase;
+}
+
+.match-card-teams span {
+  text-transform: lowercase;
+  font-size: 1.4rem;
+}
+
+
+.match-card-container p {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.match-card-day {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+.match-card-times {
+  font-size: 0.7rem;
+  padding-top: 8px;
+}
+
+.match-card-local,
+.match-card-venue {
+  color: var(--color-lightblue);
+  text-transform: uppercase;
+}
+
+.match-card-column {
+  display: flex;
+  align-items: center;
+}
+
+.match-card-center {
+  border-left: 1px dashed rgba(255, 255, 255, 0.2);
+  border-right: 1px dashed rgba(255, 255, 255, 0.2);
+  padding-left: 30px;
+}
+
+.match-card-right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+}
