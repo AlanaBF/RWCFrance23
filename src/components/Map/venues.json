@@ -4,62 +4,90 @@
     "name": "Ol Stadium",
     "city": "Lyon",
     "longitude": "45.765429678393254",
-    "latitude": "4.982007547490513"
+    "latitude": "4.982007547490513",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/bf01255e-a6af-4cd0-a5a3-064a85f79575/OL-STADIUM-LYON.jpg?width=1024",
+    "capacity": "58,883",
+     "url": "https://www.rugbyworldcup.com/2023/venues/parc-olympique-lyonnais"
+   
   },
   {
     "id": 2,
     "name": "Stade De Bordeaux",
     "city": "Bordeaux",
     "longitude": "44.897495057651454",
-    "latitude": "-0.5615433793096075"
+    "latitude": "-0.5615433793096075",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/fdfd5be7-d1f7-4c69-b197-7a699ef16d25/STADE-DE-BORDEAUX-BORDEAUX.jpg?width=1024",
+    "capacity": "42,060",
+     "url": "https://www.rugbyworldcup.com/2023/venues/matmut-atlantique"
   },
   {
     "id": 3,
     "name": "Stade Pierre Mauroy",
     "city": "Lille",
     "longitude": "50.61215048093813",
-    "latitude": "3.1304362637662453"
+    "latitude": "3.1304362637662453",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/5eb51c2a-6ba5-483a-b855-f7866d392418/STADE-PIERRE-MAUROY-LILLE.jpg?width=1024",
+    "capacity": "50,096",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stade-pierre-mauroy"
   },
   {
     "id": 4,
     "name": "Stade Vélodrome",
     "city": "Marseille",
     "longitude": "43.27014713832059",
-    "latitude": "5.395737828283878"
+    "latitude": "5.395737828283878",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/226d16b5-05e5-4072-9181-ccd4a0157e82/STADE-VELODROME-2.jpg?width=1024",
+    "capacity": "67,847",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stade-velodrome"
   },
   {
     "id": 5,
     "name": "Stade de la Beaujoire",
     "city": "Nantes",
     "longitude": "47.2561761779730",
-    "latitude": "-1.5246535362302285"
+    "latitude": "-1.5246535362302285",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/c7ca8110-6c4e-44e6-8bc2-edbc86caf27c/STADE-DE-LA-BEAUJOIRE-NANTES.jpg?width=1024",
+    "capacity": "35,520",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stade-de-la-beaujoire"
   },
   {
     "id": 6,
     "name": "Stade de Nice",
     "city": "Nice",
     "longitude": "43.77252155555119",
-    "latitude": "7.179903654753725"
+    "latitude": "7.179903654753725",
+    "image": "https://medias.paris2024.org/uploads/2021/06/NIC_1_STADE-DE-NICE_PARIS2024-min-scaled.jpg?x-oss-process=image/resize,w_2560,h_1707,m_lfit/format,jpeg",
+    "capacity": "35,983",
+    "url": "https://www.rugbyworldcup.com/2023/venues/allianz-riviera"
   },
   {
     "id": 7,
     "name": "Stade de France",
     "city": "Saint Denis",
     "longitude": "48.92462834452792",
-    "latitude": "2.360175236278099"
+    "latitude": "2.360175236278099",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/1ec60feb-3ecb-4ad5-9604-ee78393ec03d/STADE-DE-FRANCE.jpg?width=1024",
+    "capacity": "80,023",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stade-de-france"
   },
   {
     "id": 8,
     "name": "Stade Geoffroy-Guichard",
     "city": "Saint Etienne",
     "longitude": "45.46095386357343",
-    "latitude": "4.390097462543394"
+    "latitude": "4.390097462543394",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/270d5637-faa5-4468-9200-61c0c1a81ebc/STADE-GEOFFROY-GUICHARD-SAINT-ETIENNE.jpg?width=1024",
+    "capacity": "42,152",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stade-geoffroy-guichard"
   },
   {
     "id": 9,
     "name": "Stade de Tolouse",
     "city": "Tolouse",
     "longitude": "43.58346813525796",
-    "latitude": "1.4340480061851684"
+    "latitude": "1.4340480061851684",
+    "image": "https://resources.world.rugby/photo-resources/2022/05/03/aa35fa1f-e2cd-4d0c-bc5c-14b333f9b0fb/STADIUM-TOULOUSE.JPG?width=1024",
+    "capacity": "33,103",
+     "url": "https://www.rugbyworldcup.com/2023/venues/stadium-municipal"
   }
 ]

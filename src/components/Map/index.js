@@ -4,6 +4,7 @@ import venues from "./venues.json";
 import 'leaflet/dist/leaflet.css'
 import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
 import "leaflet-defaulticon-compatibility";
+import Card from "../Card/VenueCard";
 
 function Map() {
   console.log("here it comes");
@@ -20,7 +21,8 @@ function Map() {
       {venues.map((p) => {
         return <Marker key={p.id} position={[p.longitude, p.latitude]}>
           <Popup>
-            {p.name} <br /> <b>{p.city}</b>
+           <Card venue={p}/>
+            {/* {p.name} <br /> <b>{p.city}</b> */}
           </Popup>
         </Marker>;
       })}

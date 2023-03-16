@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <HeroImage />
       <NewsCarousel />
-        <Shop />
+      <Shop />
       <Map />
     </div>
 
