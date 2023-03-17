@@ -4,7 +4,7 @@ import MatchCard from "../../components/MatchCard/MatchCard";
 import getMatches from "../../utils/api_rugby/matches";
 
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
-import {Box} from '@mui/material';
+import { Box } from '@mui/material';
 
 import tempData from "./Fixtures.json"
 import Filters from "./Filters/Filters";
@@ -56,7 +56,7 @@ const Matches = () => {
       setMatches(filtered)
       return
     } else {
-      filtered = data.filter(match => match.venue === venue)
+      filtered = filtered.filter(match => match.venue === venue)
     }
 
     setMatches(filtered);
@@ -93,7 +93,7 @@ const Matches = () => {
             : <Container className="matches-content">
               <Row>
                 <Col xs={12} lg={3}>
-                  <Box className="filters-container" sx={{flexDirection: {lg: 'column'}}}>
+                  <Box className="filters-container" sx={{ flexDirection: { lg: 'column' } }}>
                     <Filters
                       filterOptions={filterOptions.teams}
                       setOption={setTeam}
@@ -109,7 +109,11 @@ const Matches = () => {
                   </Box>
                 </Col>
                 <Col xs={12} lg={9}>
-                  {matches.map(match => <MatchCard key={match.id} match={match} />)}
+                  {
+                    matches.length ?
+                      matches.map(match => <MatchCard key={match.id} match={match} />) :
+                      <h4 className="notification">No results for selected criteria</h4>
+                  }
                 </Col>
               </Row>
             </Container>
