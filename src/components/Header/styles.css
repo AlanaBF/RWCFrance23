@@ -1,0 +1,114 @@
+/* ===== Counter ======= */
+
+.counter-container {
+  background-color: #fafafa;
+}
+
+.counter {
+  font-size: 0.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.8rem;
+  padding: 10px;
+  margin: 0 auto;
+  width: 50%;
+  min-width: 300px;
+}
+
+
+.counter span {
+  font-size: 0.9rem;
+  color: var(--color-blue);
+  padding-left: 8px;
+}
+
+.counter p {
+  padding: 0;
+  margin: 0;
+}
+
+/* =================== */
+
+/* =========  Navbar ========= */
+.navbar {
+  box-shadow: 1px 3px 6px #d7d7d7;
+  padding: 0;
+}
+
+.nav-link {
+  color: var(--color-darkblue) !important;
+  font-weight: 700 !important;
+  margin-left: 40px !important;
+}
+
+.nav-link:hover {
+  color: #fff !important;
+  background-color: #2D3CFF;
+}
+
+.logo-container {
+  position: relative;
+  width: 100px;
+  height: 50px;
+}
+
+.logo-holder {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-holder img {
+  position: relative;
+  z-index: 10;
+  top: -15px;
+}
+
+.logo-text p {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 10;
+  font-size: 0.6rem;
+  color: #2D3CFF;
+  text-align: center;
+  top: -20px;
+}
+
+.logo-mobile p {
+  display: none;
+  top: 0px;
+  font-size: 0.7rem;
+}
+
+.logo-holder::after {
+  content: '';
+  background-image: url('./images/logoHolder.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  width: 150%;
+  height: 130%;
+  position: absolute;
+  left: -25%;
+  top: -10%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 991px) {
+  .logo-mobile p {
+    display: block;
+  }
+
+  .logo-holder {
+    display: none;
+  }
+
+  .nav-link {
+    margin-left: 10px !important;
+  }
+}
