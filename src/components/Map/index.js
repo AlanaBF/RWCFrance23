@@ -1,10 +1,11 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "./index.css";
 import venues from "./venues.json";
-import 'leaflet/dist/leaflet.css'
-import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
+import "leaflet/dist/leaflet.css";
+import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 import Card from "../Card/VenueCard";
+import './index.css';
 
 function Map() {
   console.log("here it comes");
@@ -19,12 +20,14 @@ function Map() {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       {venues.map((p) => {
-        return <Marker key={p.id} position={[p.longitude, p.latitude]}>
-          <Popup>
-           <Card venue={p}/>
-            {/* {p.name} <br /> <b>{p.city}</b> */}
-          </Popup>
-        </Marker>;
+        return (
+          <Marker key={p.id} position={[p.longitude, p.latitude]}>
+            <Popup>
+                <Card venue={p} />
+                {/* {p.name} <br /> <b>{p.city}</b> */}
+            </Popup>
+          </Marker>
+        );
       })}
     </MapContainer>
   );
