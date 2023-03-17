@@ -23,7 +23,7 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '85vh',
+        minHeight: '15vh',
       }}
     >
       <Box

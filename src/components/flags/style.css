@@ -1,0 +1,138 @@
+.ARG.insights__team-stats-badge,
+.team-badge-sm.ARG {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -50px 0 no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.AUS.insights__team-stats-badge,
+.team-badge-sm.AUS {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -50px -32px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.CHI.insights__team-stats-badge,
+.team-badge-sm.CHI {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -125px -96px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.ENG.insights__team-stats-badge,
+.team-badge-sm.ENG {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -175px -64px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.FIJ.insights__team-stats-badge,
+.team-badge-sm.FIJ {
+    background: url(../i/sprites/team-badge-sm-sprite.png) 0 -160px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.FRA.insights__team-stats-badge,
+.team-badge-sm.FRA {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -75px -160px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.GEO.insights__team-stats-badge,
+.team-badge-sm.GEO {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -100px -160px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.IRE.insights__team-stats-badge,
+.team-badge-sm.IRE {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -25px -192px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.ITA.insights__team-stats-badge,
+.team-badge-sm.ITA {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -100px -192px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.JPN.insights__team-stats-badge,
+.team-badge-sm.JPN {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -175px -192px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.NAM.insights__team-stats-badge,
+.team-badge-sm.NAM {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -150px -224px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.NZL.insights__team-stats-badge,
+.team-badge-sm.NZL {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -275px -32px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.POR.insights__team-stats-badge,
+.team-badge-sm.POR {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -25px -256px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.ROU.insights__team-stats-badge,
+.team-badge-sm.ROU {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -100px -256px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.SAM.insights__team-stats-badge,
+.team-badge-sm.SAM {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -200px -256px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.SCO.insights__team-stats-badge,
+.team-badge-sm.SCO {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -225px -256px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.RSA.insights__team-stats-badge,
+.team-badge-sm.RSA {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -125px -256px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.TGA.insights__team-stats-badge,
+.team-badge-sm.TGA {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -25px -288px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.URU.insights__team-stats-badge,
+.team-badge-sm.URU {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -300px -288px no-repeat;
+    width: 25px;
+    height: 32px;
+}
+
+.WAL.insights__team-stats-badge .team-badge-sm.WAL {
+    background: url(../i/sprites/team-badge-sm-sprite.png) -325px -160px no-repeat;
+    width: 25px;
+    height: 32px;
+}
