@@ -3,7 +3,8 @@ import './style.css';
 import MatchCard from "../../components/MatchCard/MatchCard";
 import getMatches from "../../utils/api_rugby/matches";
 
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Spinner } from 'react-bootstrap';
+import {Box} from '@mui/material';
 
 import tempData from "./Fixtures.json"
 import Filters from "./Filters/Filters";
@@ -12,10 +13,11 @@ const Matches = () => {
 
   const [data, setData] = useState(tempData.results);
   const [loading, setLoading] = useState(false)
-  const [error, setError] = useState({ isError: false, message: '' });
+  const [error, setError] = useState({ isError: false, message: 'Something went wrong...' });
 
   const [matches, setMatches] = useState(tempData.results);
   const [team, setTeam] = useState('all');
+  const [venue, setVenue] = useState('all');
 
   // useEffect(() => {
 
@@ -24,6 +26,9 @@ const Matches = () => {
   //       setLoading(true);
   //       const data = await getMatches();
   //       setMatches(data.results)
+  // if (!data.results) {
+  //   throw new Error (data)
+  // }
   //       console.log(data)
   //     } catch (error) {
   //       setError({ isError: true, message: error.message })
@@ -39,48 +44,81 @@ const Matches = () => {
 
   //Use effect to filter on change
   useEffect(() => {
+
+    let filtered;
     if (team === 'all') {
-      setMatches(data);
+      filtered = data
     } else {
-      const filteredMatches = data.filter(match => match.home_id === team || match.away_id === team)
-      setMatches(filteredMatches);
+      filtered = data.filter(match => match.home_id === team || match.away_id === team)
     }
-  }, [team])
+
+    if (venue === 'all') {
+      setMatches(filtered)
+      return
+    } else {
+      filtered = data.filter(match => match.venue === venue)
+    }
+
+    setMatches(filtered);
+  }, [team, venue])
 
 
-  //Get all teams Names and Id's
-  const getTeams = () => {
+  //Get all filterOptions  Names and Id's 
+  const getFilterOptions = () => {
     const teams = {}
+    const venues = new Set([]);
 
     data.forEach(match => {
       if (!teams[match.home]) teams[match.home] = match.home_id;
       if (!teams[match.away]) teams[match.away] = match.away_id;
+      venues.add(match.venue);
     });
 
-    return Object.entries(teams);
+    const venuesInArray = [...venues].map(venue => [venue]);
+    return { venues: venuesInArray, teams: Object.entries(teams) }
   }
 
-  const teams = getTeams();
+  const filterOptions = getFilterOptions();
 
   return (
     <Container fluid className="matches-page-container">
-      <div className="matches-title-container">
-        <Container>
-          <h2 className="matches-title">All  Matches</h2>
-        </Container>
+      <div>
+        <div className="matches-title-container">
+          <Container>
+            <h2 className="matches-title">All  Matches</h2>
+          </Container>
+        </div>
+        {loading ? <div className="notification" ><Spinner /> </div>
+          : error.isError ? <div className="notification">{error.message}</div>
+            : <Container className="matches-content">
+              <Row>
+                <Col xs={12} lg={3}>
+                  <Box className="filters-container" sx={{flexDirection: {lg: 'column'}}}>
+                    <Filters
+                      filterOptions={filterOptions.teams}
+                      setOption={setTeam}
+                      option={team}
+                      title="Team"
+                    />
+                    <Filters
+                      filterOptions={[...filterOptions.venues]}
+                      setOption={setVenue}
+                      option={venue}
+                      title="Venue"
+                    />
+                  </Box>
+                </Col>
+                <Col xs={12} lg={9}>
+                  {matches.map(match => <MatchCard key={match.id} match={match} />)}
+                </Col>
+              </Row>
+            </Container>
+        }
       </div>
-      <Container className="matches-content">
-        <Row>
-          <Col xs={12} md={3}>
-            <Filters teams={teams} setTeam={setTeam} team={team} />
-          </Col>
-          <Col xs={12} md={9}>
-            {matches.map(match => <MatchCard key={match.id} match={match} />)}
-          </Col>
-        </Row>
-      </Container>
+
     </Container>
   )
 }
 
 export default Matches
+

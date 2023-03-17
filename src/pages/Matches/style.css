@@ -1,19 +1,45 @@
 .matches-page-container {
   background-color: var(--bg-blue);
-  background-image: url('../../assets/images/backgroundShapes.png')
+  background-image: url('../../assets/images/backgroundShapes.png');
+  min-height: 80vh;
+  position: relative;
+  padding: 0;
 }
 
 .matches-title-container {
-  padding: 20px 10px 10px 120px;
-  background-color: blue
+  padding: 20px 10px 10px 20px;
+  background-color: #2c2cff;
 }
 
 .matches-title {
-  padding-left: 150px;
+  padding-left: 15%;
   color: #fff;
   text-transform: uppercase;
 }
 
 .matches-content {
   padding-top: 30px;
+}
+
+
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.notification {
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
