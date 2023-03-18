@@ -1,119 +1,124 @@
 .ARGENTINA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px 0px no-repeat;
+    background: url(./assets/flags.png) -100px 0px no-repeat;
     width: 50px;
-    height:64px;
-}
+    height:65px;}
 
 .AUSTRALIA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -65px no-repeat;
+    background: url(./assets/flags.png) -100px -65px no-repeat;
     width: 50px;
-    height: 63px;
+    height:65px;
 }
 
 .CHILE {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -195px no-repeat;
+    background: url(./assets/flags.png) -250px -195px no-repeat;
     width: 50px;
-    height: 61px;
+    height:65px;
 }
 
 .ENGLAND {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -350px -130px no-repeat;
+    background: url(./assets/flags.png) -350px -130px no-repeat;
     width: 50px;
-    height: 62px;
+    height:65px;
 }
 
 .FIJI {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") 0 -325px no-repeat;
+    background: url(./assets/flags.png) 0 -325px no-repeat;
     width: 50px;
-    height: 59px;
+    height:65px;
 }
 
 .FRANCE {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -150px -325px no-repeat;
+    background: url(./assets/flags.png) -150px -325px no-repeat;
     width: 50px;
-    height: 59px;
+    height:65px;
 }
 
 .GEORGIA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -325px no-repeat;
+    background: url(./assets/flags.png) -200px -325px no-repeat;
     width: 50px;
-    height: 59px;
+    height:65px;
 }
 
 .JAPAN {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -65px no-repeat;
+    background: url(./assets/flags.png) -50px -390px no-repeat;
     width: 50px;
-    height: 63px;
+    height:65px;
 }
 
 .ITALY {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -260px no-repeat;
+    background: url(./assets/flags.png) -450px -260px no-repeat;
     width: 50px;
-    height: 60px;
+    height:65px;
 }
 
 .IRELAND {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -390px no-repeat;
+    background: url(./assets/flags.png) -450px -65px no-repeat;
     width: 50px;
-    height: 58px;
+    height:65px;
 }
 
 .NAMIBIA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -300px -455px no-repeat;
+    background: url(./assets/flags.png) -300px -455px no-repeat;
     width: 50px;
-    height: 58px;
+    height:65px;
 }
 
 .NEW-ZEALAND {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -65px no-repeat;
+    background: url(./assets/flags.png) -550px -65px no-repeat;
     width: 50px;
-    height: 63px;
+    height:65px;
 }
 
 .PORTUGAL {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -520px no-repeat;
+    background: url(./assets/flags.png) -50px -520px no-repeat;
     width: 50px;
-    height: 57px;
+    height:65px;
 }
 
 .ROMANIA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -520px no-repeat;
+    background: url(./assets/flags.png) -200px -520px no-repeat;
     width: 50px;
-    height: 56px;
+    height:65px;
 }
 
 .SAMOA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -400px -520px no-repeat;
+    background: url(./assets/flags.png) -400px -520px no-repeat;
     width: 50px;
-    height: 56px;
+    height:65px;
 }
 
 .SCOTLAND {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -520px no-repeat;
+    background: url(./assets/flags.png) -450px -520px no-repeat;
     width: 50px;
-    height: 56px;
+    height:65px;
 }
 
 .SOUTH-AFRICA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -520px no-repeat;
+    background: url(./assets/flags.png) -250px -520px no-repeat;
     width: 50px;
-    height: 56px;
+    height:65px;
 }
 
 .TONGA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -0 -585px no-repeat;
+    background: url(./assets/flags.png) -0 -585px no-repeat;
     width: 50px;
-    height: 63px;
+    height:65px;
 }
 
 .URUGUAY {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -585px no-repeat;
+    background: url(./assets/flags.png) -550px -585px no-repeat;
     width: 50px;
-    height: 63px;
+    height:65px;
 }
 
 .WALES {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -650px -260px no-repeat;
+    background: url(./assets/flags.png) -650px -260px no-repeat;
     width: 50px;
-    height: 60px;
+    height:65px;
+}
+
+.TBC {
+    background: url(./assets/flags.png) -650px -455px no-repeat;
+    width: 50px;
+    height:65px;
 }

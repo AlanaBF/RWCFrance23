@@ -11,7 +11,7 @@ function Map() {
   console.log("here it comes");
   return (
     <MapContainer
-      center={[48.839778927446694, 2.337432936304376]}
+      center={[46.41667656076642, 2.6462079034383494]}
       zoom={5}
       scrollWheelZoom={false}
     >
