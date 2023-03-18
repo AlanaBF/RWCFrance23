@@ -1,0 +1,83 @@
+.team-card-container {
+    width: 100%;
+    background: var(--bg-darkblue);
+    margin: 3px 0;
+    color: #fafafa;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    border-radius: 25px;
+  }
+  
+  .team-card-teams {
+    text-transform: uppercase;
+  }
+  
+  .team-card-teams span {
+    text-transform: lowercase;
+    font-size: 1.4rem;
+  }
+  
+  
+  .team-card-container p {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 200;
+  }
+  
+  .team-card-day {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-card-times {
+    font-size: 0.7rem;
+    padding-top: 8px;
+  }
+  
+  .team-card-local,
+  .team-card-venue {
+    color: var(--color-lightblue);
+    text-transform: uppercase;
+  }
+  
+  .team-card-column {
+    display: flex;
+    flex-direction: column !important;
+  }
+  
+  .team-card-center {
+    border-left: 1px dashed rgba(255, 255, 255, 0.2);
+    border-right: 1px dashed rgba(255, 255, 255, 0.2);
+    padding-left: 30px;
+  }
+  
+  .team-card-right a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+  }
+h3 {
+  font-size: 35px;
+}
+h4 {
+  font-size: 28px;
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 20px;
+}
+span {
+  font-size: 16px;
+}
+  .section-title {
+    font-size: 13px;
+    margin-bottom: 15px;
+    padding-top: 5px;
+  }

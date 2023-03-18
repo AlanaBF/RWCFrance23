@@ -1,0 +1,20 @@
+.teams-page-container {
+    background-color: var(--bg-blue);
+    background-image: url('../../assets/images/backgroundShapes.png');
+    height: 100%;
+  }
+  
+.teams-title-container {
+padding: 20px 10px 10px 120px;
+background-color: blue
+}
+
+.teams-title {
+padding-left: 150px;
+color: #fff;
+text-transform: uppercase;
+}
+
+.teams-content {
+padding-top: 30px;
+}
