@@ -7,23 +7,23 @@ const TeamCard = ({ match }) => {
   //   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
-    <Container fluid className="match-card-container">
-      <Row className="p-3">
-        <Col xs={12} md={2} className={"match-card-column"}>
+    <Container fluid className="team-card-container">
+      <Row className="p-3 card-body">
+        <Col xs={12} md={3} className={"team-card-column"}>
           <span>Country icon</span>
         </Col>
-        <Col xs={12} md={3} className={"match-card-column match-card-center"} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+        <Col xs={12} md={3} className={"team-card-column team-card-center cvc"} style={{display: 'flex', flexDirection: 'column'}}>
           <h3>Country Name</h3>
           <h5 className="ranking-p">Ranking Position</h5>
         </Col>
-        <Col xs={12} md={3} className={"match-card-column match-card-center"} style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+        <Col xs={12} md={3} className={"team-card-column team-card-center"} style={{display: 'flex', flexDirection: 'column'}}>
           <h6 className="section-title">NEXT RWC MATCH</h6>
           <h5>COUNTRY v COUNTRY</h5>
           <h5>
             Pool A <span>Stade De France</span>
           </h5>
         </Col>
-        <Col xs={12} md={4} className={"match-card-column"} style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-between'}}>
+        <Col xs={12} md={3} className={"team-card-column"} style={{display: 'flex', flexDirection: 'column'}}>
           <h6 className="section-title">HIGHEST RWC FINISH</h6>
           <h5>RUNNER UP</h5>
           <span>177,182,922</span>

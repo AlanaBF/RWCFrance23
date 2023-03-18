@@ -1,4 +1,6 @@
 .match-card-container {
+  display: flex;
+  height: 7.5rem;
   width: 100%;
   background: var(--bg-darkblue);
   margin: 3px 0;
@@ -16,15 +18,12 @@
   text-transform: lowercase;
   font-size: 1.4rem;
 }
-
-
 .match-card-container p {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
   font-weight: 200;
 }
-
 .match-card-day {
   text-transform: uppercase;
   font-size: 1rem;

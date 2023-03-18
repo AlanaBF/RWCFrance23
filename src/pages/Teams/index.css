@@ -30,6 +30,7 @@ h3 {
 .teams-title {
   width: 100%;
   color: #fff;
+  padding-left: 140.391px;
   text-transform: uppercase;
 }
 .teams-content {
@@ -39,9 +40,8 @@ h3 {
 .teams-banner {
   position: relative;
   min-width: 100%;
-  height: 65vh;
+  height: 60vh;
 }
-
 .teams-banner-content {
   left: 30%;
   padding-left: 2rem;
@@ -55,7 +55,6 @@ h3 {
   display: block;
   color: #fff;
 }
-
 .teams-banner-content h3 {
   font-weight: 900;
   font-size: 1.3rem;
