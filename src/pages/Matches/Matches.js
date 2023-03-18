@@ -19,27 +19,27 @@ const Matches = () => {
   const [team, setTeam] = useState('all');
   const [venue, setVenue] = useState('all');
 
-  // useEffect(() => {
+  useEffect(() => {
 
-  //   const fetchMatches = async () => {
-  //     try {
-  //       setLoading(true);
-  //       const data = await getMatches();
-  //       setMatches(data.results)
-  // if (!data.results) {
-  //   throw new Error (data)
-  // }
-  //       console.log(data)
-  //     } catch (error) {
-  //       setError({ isError: true, message: error.message })
-  //     } finally {
-  //       setLoading(false)
-  //     }
-  //   }
+    // const fetchMatches = async () => {
+    //   try {
+    //     setLoading(true);
+    //     const data = await getMatches();
+    //     setData(data.results)
+    //     if (!data.results) {
+    //       throw new Error(data)
+    //     }
+    //     console.log(data)
+    //   } catch (error) {
+    //     setError({ isError: true, message: error.message })
+    //   } finally {
+    //     setLoading(false)
+    //   }
+    // }
 
-  //   fetchMatches()
+    // fetchMatches()
 
-  // }, []);
+  }, []);
 
 
   //Use effect to filter on change
@@ -60,7 +60,7 @@ const Matches = () => {
     }
 
     setMatches(filtered);
-  }, [team, venue])
+  }, [team, venue, data]);
 
 
   //Get all filterOptions  Names and Id's 
