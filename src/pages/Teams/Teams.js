@@ -4,6 +4,28 @@ import TeamCard from "../../components/TeamCard";
 import "./index.css";
 
 const Teams = () => {
+  const country = [
+    {
+      id: 2417,
+      home: "Argentina",
+    },
+    {
+      id: 317,
+      home: "Australia",
+    },
+    {
+      id: 58739,
+      home: "Chile",
+    },
+    {
+      id: 1667,
+      home: "England",
+    },
+    {
+      id: 2879,
+      home: "Fiji",
+    }
+  ];
   return (
     <Container fluid className="teams-page-container">
       <Container className="teams-banner">
@@ -25,7 +47,14 @@ const Teams = () => {
         </div>
         <Container className="teams-content">
           <Row>
-            <TeamCard />
+            {country.map((c) => (
+              <TeamCard
+                key={c.id}
+                home={c.home}
+                pool="Pool A"
+                stade="Stade de France"
+              />
+            ))}
           </Row>
         </Container>
       </Container>

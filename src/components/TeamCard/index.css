@@ -1,8 +1,7 @@
 .team-card-container {
   width: 100%;
-  background: var(--bg-darkblue);
+  background: #fff;
   margin: 3px 0;
-  color: #fafafa;
   border-radius: 25px; 
 }
 .card-body {
