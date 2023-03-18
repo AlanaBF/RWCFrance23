@@ -1,6 +1,4 @@
 .match-card-container {
-  display: flex;
-  height: 7.5rem;
   width: 100%;
   background: var(--bg-darkblue);
   margin: 3px 0;
