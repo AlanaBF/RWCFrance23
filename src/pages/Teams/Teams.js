@@ -1,9 +1,15 @@
 import React from 'react'
-
+import Flags from '../../components/Flags/index'
 const Teams = () => {
   return (
-    <div>Teams</div>
+    <div>
+
+      <Flags />
+    </div>
   )
 }
 
 export default Teams
+
+
+

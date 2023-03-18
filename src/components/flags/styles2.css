@@ -1,0 +1,119 @@
+.ARG {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px 0px no-repeat;
+    width: 50px;
+    height:64px;
+}
+
+.AUS {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -65px no-repeat;
+    width: 50px;
+    height: 63px;
+}
+
+.CHI {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -195px no-repeat;
+    width: 50px;
+    height: 61px;
+}
+
+.ENG {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -350px -130px no-repeat;
+    width: 50px;
+    height: 62px;
+}
+
+.FIJ {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") 0 -325px no-repeat;
+    width: 50px;
+    height: 59px;
+}
+
+.FRA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -150px -325px no-repeat;
+    width: 50px;
+    height: 59px;
+}
+
+.GEO {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -325px no-repeat;
+    width: 50px;
+    height: 59px;
+}
+
+.JPN {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -65px no-repeat;
+    width: 50px;
+    height: 63px;
+}
+
+.ITA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -260px no-repeat;
+    width: 50px;
+    height: 60px;
+}
+
+.IRE {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -390px no-repeat;
+    width: 50px;
+    height: 58px;
+}
+
+.NAM {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -300px -455px no-repeat;
+    width: 50px;
+    height: 58px;
+}
+
+.NZL {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -65px no-repeat;
+    width: 50px;
+    height: 63px;
+}
+
+.POR {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -520px no-repeat;
+    width: 50px;
+    height: 57px;
+}
+
+.ROU {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -520px no-repeat;
+    width: 50px;
+    height: 56px;
+}
+
+.SAM {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -400px -520px no-repeat;
+    width: 50px;
+    height: 56px;
+}
+
+.SCO {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -520px no-repeat;
+    width: 50px;
+    height: 56px;
+}
+
+.RSA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -520px no-repeat;
+    width: 50px;
+    height: 56px;
+}
+
+.TGA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -0 -585px no-repeat;
+    width: 50px;
+    height: 63px;
+}
+
+.URU {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -585px no-repeat;
+    width: 50px;
+    height: 63px;
+}
+
+.WAL {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -650px -260px no-repeat;
+    width: 50px;
+    height: 60px;
+}

@@ -1,22 +1,20 @@
-url = "https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png"
+import { useState, React } from 'react';
+import './styles2.css';
 
-className = "Argentina team-badge-sm.ARG"
-className = "Australia team-badge-sm.AUS"
-className = "Chile team-badge-sm.CHI"
-className = "England team-badge-sm.ENG"
-className = "Fiji team-badge-sm.FIJ"
-className = "France team-badge-sm.FRA"
-className = "Georgia team-badge-sm.GEO"
-className = "Ireland team-badge-sm.IRE"
-className = "Italy team-badge-sm.ITA"
-className = "Japan team-badge-sm.JPN"
-className = "Namibia team-badge-sm.NAM"
-className = "New Zealand team-badge-sm.NZL"
-className = "Portugal team-badge-sm.POR"
-className = "Romania team-badge-sm.ROU"
-className = "Samoa team-badge-sm.SAM"
-className = "Scotland team-badge-sm.SCO"
-className = "South Africa team-badge-sm.RSA"
-className = "Tonga team-badge-sm.TGA"
-className = "Uruguay team-badge-sm.URU"
-className = "Wales team-badge-sm.WAL"
+const Flags = () => {
+    
+    return (
+        <div style={{paddingTop: "50px", paddingLeft: "50px"}}>
+            <div className="CHI"></div>
+         </div>
+    )
+}
+
+export default Flags
+
+//THESE ARE INCORRECT
+//JPN
+//ITA
+//URU
+//TGA
+//WAL
