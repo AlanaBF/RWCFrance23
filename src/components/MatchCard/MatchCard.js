@@ -4,7 +4,8 @@ import moment from "moment-timezone";
 
 
 const MatchCard = ({ match }) => {
-  const { id, home, away, date, venue, away_id, home_id, away_score, home_score } = match;
+  //away_id, home_id, away_score, home_score, id
+  const {  home, away, date, venue } = match;
   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
