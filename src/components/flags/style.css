@@ -1,137 +1,119 @@
-.ARG.insights__team-stats-badge,
-.team-badge-sm.ARG {
-    background-image: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px 0 no-repeat;
-    width: 25px;
-    height: 32px;
+.ARGENTINA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px 0px no-repeat;
+    width: 50px;
+    height:64px;
 }
 
-.AUS {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -32px no-repeat;
-    width: 25px;
-    height: 32px;
+.AUSTRALIA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -65px no-repeat;
+    width: 50px;
+    height: 63px;
 }
 
-.CHI.insights__team-stats-badge,
-.team-badge-sm.CHI {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -125px -96px no-repeat;
-    width: 25px;
-    height: 32px;
+.CHILE {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -195px no-repeat;
+    width: 50px;
+    height: 61px;
 }
 
-.ENG.insights__team-stats-badge,
-.team-badge-sm.ENG {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -175px -64px no-repeat;
-    width: 25px;
-    height: 32px;
+.ENGLAND {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -350px -130px no-repeat;
+    width: 50px;
+    height: 62px;
 }
 
-.FIJ.insights__team-stats-badge,
-.team-badge-sm.FIJ {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") 0 -160px no-repeat;
-    width: 25px;
-    height: 32px;
+.FIJI {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") 0 -325px no-repeat;
+    width: 50px;
+    height: 59px;
 }
 
-.FRA.insights__team-stats-badge,
-.team-badge-sm.FRA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -75px -160px no-repeat;
-    width: 25px;
-    height: 32px;
+.FRANCE {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -150px -325px no-repeat;
+    width: 50px;
+    height: 59px;
 }
 
-.GEO.insights__team-stats-badge,
-.team-badge-sm.GEO {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -160px no-repeat;
-    width: 25px;
-    height: 32px;
+.GEORGIA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -325px no-repeat;
+    width: 50px;
+    height: 59px;
 }
 
-.IRE.insights__team-stats-badge,
-.team-badge-sm.IRE {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -25px -192px no-repeat;
-    width: 25px;
-    height: 32px;
+.JAPAN {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -65px no-repeat;
+    width: 50px;
+    height: 63px;
 }
 
-.ITA.insights__team-stats-badge,
-.team-badge-sm.ITA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -192px no-repeat;
-    width: 25px;
-    height: 32px;
+.ITALY {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -260px no-repeat;
+    width: 50px;
+    height: 60px;
 }
 
-.JPN.insights__team-stats-badge,
-.team-badge-sm.JPN {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -175px -192px no-repeat;
-    width: 25px;
-    height: 32px;
+.IRELAND {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -390px no-repeat;
+    width: 50px;
+    height: 58px;
 }
 
-.NAM.insights__team-stats-badge,
-.team-badge-sm.NAM {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -150px -224px no-repeat;
-    width: 25px;
-    height: 32px;
+.NAMIBIA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -300px -455px no-repeat;
+    width: 50px;
+    height: 58px;
 }
 
-.NZL.insights__team-stats-badge,
-.team-badge-sm.NZL {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -275px -32px no-repeat;
-    width: 25px;
-    height: 32px;
+.NEW-ZEALAND {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -65px no-repeat;
+    width: 50px;
+    height: 63px;
 }
 
-.POR.insights__team-stats-badge,
-.team-badge-sm.POR {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -25px -256px no-repeat;
-    width: 25px;
-    height: 32px;
+.PORTUGAL {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -50px -520px no-repeat;
+    width: 50px;
+    height: 57px;
 }
 
-.ROU.insights__team-stats-badge,
-.team-badge-sm.ROU {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -100px -256px no-repeat;
-    width: 25px;
-    height: 32px;
+.ROMANIA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -520px no-repeat;
+    width: 50px;
+    height: 56px;
 }
 
-.SAM.insights__team-stats-badge,
-.team-badge-sm.SAM {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -200px -256px no-repeat;
-    width: 25px;
-    height: 32px;
+.SAMOA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -400px -520px no-repeat;
+    width: 50px;
+    height: 56px;
 }
 
-.SCO.insights__team-stats-badge,
-.team-badge-sm.SCO {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -225px -256px no-repeat;
-    width: 25px;
-    height: 32px;
+.SCOTLAND {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -450px -520px no-repeat;
+    width: 50px;
+    height: 56px;
 }
 
-.RSA.insights__team-stats-badge,
-.team-badge-sm.RSA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -125px -256px no-repeat;
-    width: 25px;
-    height: 32px;
+.SOUTH-AFRICA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -250px -520px no-repeat;
+    width: 50px;
+    height: 56px;
 }
 
-.TGA.insights__team-stats-badge,
-.team-badge-sm.TGA {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -25px -288px no-repeat;
-    width: 25px;
-    height: 32px;
+.TONGA {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -0 -585px no-repeat;
+    width: 50px;
+    height: 63px;
 }
 
-.URU.insights__team-stats-badge,
-.team-badge-sm.URU {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -300px -288px no-repeat;
-    width: 25px;
-    height: 32px;
+.URUGUAY {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -550px -585px no-repeat;
+    width: 50px;
+    height: 63px;
 }
 
-.WAL.insights__team-stats-badge .team-badge-sm.WAL {
-    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -325px -160px no-repeat;
-    width: 25px;
-    height: 32px;
+.WALES {
+    background: url("https://www.rugbyworldcup.com/rwc2023-resources/prod/rwc2023_v3.0.8/i/sprites/team-badge-sm-sprite@x2.png") -650px -260px no-repeat;
+    width: 50px;
+    height: 60px;
 }

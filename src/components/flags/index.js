@@ -1,12 +1,15 @@
 import { useState, React } from 'react';
-import './styles2.css';
+import './style.css';
 
-const Flags = () => {
-    
+const Flags = ({ team }) => {
+
+    //adds a space to replace the -
+    const formattedClass = team.replace('', '-').toUpperCase();
+
     return (
-        <div style={{paddingTop: "50px", paddingLeft: "50px"}}>
-            <div className="CHI"></div>
-         </div>
+        <div>
+            <div className={formattedClass}></div>
+        </div>
     )
 }
 
