@@ -2,8 +2,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./index.css";
 // import moment from "moment-timezone";
 
-const TeamCard = ({ match }) => {
-    const { home, away, pool, stade } = match;
+const TeamCard = ({away, pool, stade, home, id }) => {
   //   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (

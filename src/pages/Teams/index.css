@@ -36,7 +36,11 @@ h3 {
 .teams-content {
   padding-top: 30px;
 }
-
+.teams-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .teams-banner {
   position: relative;
   min-width: 100%;
