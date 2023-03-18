@@ -1,6 +1,8 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import Flags from '../flags'
 import "./style.css";
 import moment from "moment-timezone";
+
 
 
 const MatchCard = ({ match }) => {
@@ -30,8 +32,9 @@ const MatchCard = ({ match }) => {
           </Row>
         </Col>
         <Col xs={12} md={7} className={'match-card-column match-card-center'}>
-          <div className='matches-card-flags'>
-
+          <div className='matches-card-flags '>
+            <Flags team={home}/>
+            <Flags team={away}/>
           </div>
           <div>
             <div>

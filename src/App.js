@@ -1,12 +1,13 @@
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Outlet, Route } from "react-router-dom";
-import Header from './components/Header/Header.js';
-import StickyFooter from './components/Footer/StickyFooter.js';
-import Home from './pages/Home/Home.js';
-import NotFound from './pages/NotFound/NotFound.js';
-import Teams from "./pages/Teams/Teams.js";
-import TeamInfo from './pages/TeamInfo/TeamInfo.js';
-import Matches from './pages/Matches/Matches.js';
-
+// import Header from './components/Header/Header.js';
+// import StickyFooter from './components/Footer/StickyFooter.js';
+import { Header, StickyFooter } from './components/index';
+// import Home from './pages/Home/Home.js';
+// import NotFound from './pages/NotFound/NotFound.js';
+// import Teams from "./pages/Teams/Teams.js";
+// import TeamInfo from './pages/TeamInfo/TeamInfo.js';
+// import Matches from './pages/Matches/Matches.js';
+import { Home, NotFound, Teams, TeamInfo, Matches} from './pages/index';
 
 const App = () => {
   const router = createBrowserRouter(
