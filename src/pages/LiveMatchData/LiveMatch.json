@@ -1,0 +1,122 @@
+{
+    "meta": {
+      "title": "Live Rugby API - Match Feed",
+      "description": "Detailed match data for France v New Zealand - Rugby Union World Cup, 2024",
+      "fields": {
+        "match": {
+          "id": "Integer",
+          "comp_id": "Integer",
+          "comp_name": "String",
+          "season": "Integer",
+          "status": "String - Not Started, First Half, Half Time, Second Half, Full Time, Result, Postponed, Cancelled",
+          "match_minute": "Integer",
+          "venue": "Integer",
+          "game_week": "Integer",
+          "home_team": "String",
+          "away_team": "String",
+          "home_id": "Integer",
+          "away_id": "Integer",
+          "date": "Timestamp - ISO 8061 - always UTC",
+          "home_score": "Integer",
+          "away_score": "Integer",
+          "home_tries": "Integer",
+          "away_tries": "Integer",
+          "home_conversions": "Integer",
+          "away_conversions": "Integer",
+          "home_penalties": "Integer",
+          "away_penalties": "Integer",
+          "home_drop_goals": "Integer",
+          "away_drop_goals": "Integer",
+          "updated": "Timestamp - ISO 8061 - always UTC"
+        },
+        "referees_array": {
+          "name": "String",
+          "country": "String",
+          "role": "String"
+        },
+        "home_away_objects": {
+          "teamsheet_array": {
+            "player_id": "Integer",
+            "name": "String",
+            "position": "Integer - rugby positions from 1-23",
+            "substitute": "Boolean"
+          },
+          "team_stats": {
+            "stat_name": "String - attack, defence, discipline, kicking, breakdown, lineouts, scrums, possession",
+            "stat_array": {
+              "stat": "String - stat name",
+              "value": "String - could be number, string, or double (representing a percentage)"
+            }
+          }
+        },
+        "events_array": {
+          "id": "Integer",
+          "time": "Integer",
+          "team_id": "Integer",
+          "type": "String - Try, Penalty Try, Conversion, Penalty, Drop Goal, Missed Drop Goal, Substitution",
+          "player_1_name": "String - For Penalty Tries, value = No Player",
+          "player_1_id": "Integer - For Penalty Tries, value = 0",
+          "player_2_name": "String - only visible if type = Substitution",
+          "player_2_id": "Integer - only visible if type = Substitution",
+          "home_or_away": "String - home, away"
+        }
+      }
+    },
+    "results": {
+      "match": {
+        "id": 920716,
+        "comp_id": 1272,
+        "comp_name": "Rugby Union World Cup",
+        "season": "2024",
+        "status": "Not Started",
+        "match_minute": 0,
+        "venue": "Stade de France",
+        "game_week": 1,
+        "home_team": "France",
+        "away_team": "New Zealand",
+        "home_id": 1967,
+        "away_id": 2567,
+        "date": "2023-09-08T19:00:00+00:00",
+        "home_score": 0,
+        "away_score": 0,
+        "home_tries": 0,
+        "away_tries": 0,
+        "home_conversions": 0,
+        "away_conversions": 0,
+        "home_penalties": 0,
+        "away_penalties": 0,
+        "home_drop_goals": 0,
+        "away_drop_goals": 0,
+        "updated": "2023-03-19T01:00:03+00:00"
+      },
+      "referees": [],
+      "home": {
+        "teamsheet": [],
+        "team_stats": {
+          "attack": [],
+          "defence": [],
+          "discipline": [],
+          "kicking": [],
+          "breakdown": [],
+          "lineouts": [],
+          "scrums": [],
+          "possession": []
+        }
+      },
+      "away": {
+        "teamsheet": [],
+        "team_stats": {
+          "attack": [],
+          "defence": [],
+          "discipline": [],
+          "kicking": [],
+          "breakdown": [],
+          "lineouts": [],
+          "scrums": [],
+          "possession": []
+        }
+      },
+      "events": []
+    }
+  }
+  
