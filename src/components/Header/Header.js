@@ -46,7 +46,7 @@ function Header() {
                 <Nav.Link >TEAMS</Nav.Link>
               </LinkContainer>
               <NavDropdown className='ms-auto' title="MORE" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">LiveUpdates</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
                 </NavDropdown.Item>

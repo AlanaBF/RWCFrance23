@@ -7,7 +7,7 @@ import { Header, StickyFooter } from './components/index';
 // import Teams from "./pages/Teams/Teams.js";
 // import TeamInfo from './pages/TeamInfo/TeamInfo.js';
 // import Matches from './pages/Matches/Matches.js';
-import { Home, NotFound, Teams, TeamInfo, Matches} from './pages/index';
+import { Home, NotFound, Teams, TeamInfo, Matches, LiveUpdates} from './pages/index';
 
 const App = () => {
   const router = createBrowserRouter(
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/teams" element={<Teams />} />
         <Route path="/teams/:id" element={<TeamInfo />} />
         <Route path="/matches" element={<Matches />} />
-
+        <Route path="/liveupdates/:id" element={<LiveUpdates />} />
         <Route path='*' element={<NotFound />} />
       </Route>
     )

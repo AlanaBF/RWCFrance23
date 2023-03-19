@@ -2,12 +2,13 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Flags from '../Flags'
 import "./style.css";
 import moment from "moment-timezone";
+import { Link } from 'react-router-dom';
 
 
 
 const MatchCard = ({ match }) => {
   //away_id, home_id, away_score, home_score, id
-  const {  home, away, date, venue } = match;
+  const { home, away, date, venue, id } = match;
   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
@@ -33,8 +34,8 @@ const MatchCard = ({ match }) => {
         </Col>
         <Col xs={12} md={7} className={'match-card-column match-card-center'}>
           <div className='matches-card-flags '>
-            <Flags team={home}/>
-            <Flags team={away}/>
+            <Flags team={home} />
+            <Flags team={away} />
           </div>
           <div>
             <div>
@@ -51,6 +52,9 @@ const MatchCard = ({ match }) => {
           >
             Tickets Info
           </a>
+          <Link to={`/liveupdates/${id}`}>
+            Live Updates
+          </Link>
         </Col>
       </Row>
     </Container>
