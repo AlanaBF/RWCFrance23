@@ -10,6 +10,15 @@
 
 .match-card-teams {
   text-transform: uppercase;
+  margin: 0;
+}
+
+.match-card-score {
+  font-size: 2rem;
+  margin: 10px 0;
+  display: block;
+  color: #78DCAA;
+  
 }
 
 .match-card-teams span {
@@ -57,16 +66,39 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  color: #fff;
 }
 
-.match-card-right a {
+.match-card-right a:hover{
+  opacity: 0.6;
+}
+.match-card-right a{
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 700; 
   color: #fff;
+}
+
+.match-card-right a:nth-child(2) {
+  color: #78DCAA;
 }
 
 .matches-card-flags {
   display: flex;
   padding-right: 10px;
+}
+
+
+@media screen and (max-width: 767px) {
+  .match-card-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .match-card-times {
+    padding-top: 0;
+  }
 }

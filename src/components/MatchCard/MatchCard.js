@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 const MatchCard = ({ match }) => {
   //away_id, home_id, away_score, home_score, id
-  const { home, away, date, venue, id } = match;
+  const { home, away, date, venue, id, home_score, away_score } = match;
   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
@@ -40,6 +40,7 @@ const MatchCard = ({ match }) => {
           <div>
             <div>
               <h3 className='match-card-teams'>{home} <span>v</span> {away}</h3>
+              <span className='match-card-score'>{home_score} : {away_score}</span>
             </div>
             <div >
               <span className='match-card-venue'>Venue:</span>  <span className='fw-lighter'>{venue}</span>
@@ -52,7 +53,7 @@ const MatchCard = ({ match }) => {
           >
             Tickets Info
           </a>
-          <Link to={`/liveupdates/${id}`}>
+          <Link to={`/liveupdates/${id}`} className='match-card-live'>
             Live Updates
           </Link>
         </Col>

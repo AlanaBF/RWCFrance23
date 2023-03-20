@@ -12,10 +12,3 @@ const Flags = ({ team }) => {
 }
 
 export default Flags
-
-//THESE ARE INCORRECT
-//JPN
-//ITA
-//URU
-//TGA
-//WAL
