@@ -8,7 +8,6 @@ import './style.css'
 
 const LiveUpdates = () => {
   const { id } = useParams()
-
   const [data, setData] = useState([]);
   const [query, setQuery] = useState(id);
   const [loading, setLoading] = useState(false)
@@ -45,7 +44,6 @@ const LiveUpdates = () => {
             <h2 className="live-title">Live Match Data</h2>
           </Container>
         </div>
-       
         {loading ? <div className="notification" ><Spinner /> </div>
           : error.isError ? <div className="notification">{error.message}</div>
             : <Container className="live-content">
@@ -66,15 +64,16 @@ const LiveUpdates = () => {
                   <Container className="live-card-container">
                     <h1>{data.match?.home_team}</h1>
                     <h4>Teamsheet: {data.home?.teamsheet}</h4>
-                    <h4 className="live-home-stats">Team stats:
-                      Attack: {data.home?.team_stats.attack}
-                      Defence: {data.home?.team_stats.defence}
-                      Discipline: {data.home?.team_stats.discipline}
-                      Kicking:{data.home?.team_stats.kicking}
-                      Breakdown:{data.home?.team_stats.breakdown}
-                      Lineouts: {data.home?.team_stats.lineouts}
-                      Scrums: {data.home?.team_stats.scrums}
-                      Possession: {data.home?.team_stats.possession}
+                    <h4 className="live-home-stats">
+                    Team stats:
+                    <li>Attack: {data.home?.team_stats.attack}</li>
+                    <li>Defence: {data.home?.team_stats.defence}</li>
+                    <li>Discipline: {data.home?.team_stats.discipline}</li>
+                    <li>Kicking:{data.home?.team_stats.kicking}</li>
+                    <li>Breakdown:{data.home?.team_stats.breakdown}</li>
+                    <li>Lineouts: {data.home?.team_stats.lineouts}</li>
+                    <li>Scrums: {data.home?.team_stats.scrums}</li>
+                    <li>Possession: {data.home?.team_stats.possession}</li>
                     </h4>
                   </Container>
                 </Col>
@@ -82,15 +81,17 @@ const LiveUpdates = () => {
                   <Container className="live-card-container">
                     <h1>{data.match?.away_team}</h1>
                     <h4>Teamsheet: {data.away?.teamsheet}</h4>
-                    <h4 className="live-away-stats">Team stats:
-                      Attack: {data.away?.team_stats.attack}
-                      Defence: {data.away?.team_stats.defence}
-                      Discipline: {data.away?.team_stats.discipline}
-                      Kicking:{data.away?.team_stats.kicking}
-                      Breakdown:{data.away?.team_stats.breakdown}
-                      Lineouts: {data.away?.team_stats.lineouts}
-                      Scrums: {data.away?.team_stats.scrums}
-                      Possession: {data.away?.team_stats.possession}
+                    <h4 className="live-away-stats">
+                      
+                      Team stats:
+                      <li>Attack: {data.away?.team_stats.attack}</li>
+                      <li>Defence: {data.away?.team_stats.defence}</li>
+                      <li>Discipline: {data.away?.team_stats.discipline}</li>
+                      <li>Kicking:{data.away?.team_stats.kicking}</li>
+                      <li>Breakdown:{data.away?.team_stats.breakdown}</li>
+                      <li>Lineouts: {data.away?.team_stats.lineouts}</li>
+                      <li>Scrums: {data.away?.team_stats.scrums}</li>
+                      <li>Possession: {data.away?.team_stats.possession}</li>
                     </h4>
                   </Container>
                 </Col>

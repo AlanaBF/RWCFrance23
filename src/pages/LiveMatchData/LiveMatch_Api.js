@@ -6,7 +6,7 @@ const options = {
   method: 'GET',
   url: `https://rugby-live-data.p.rapidapi.com/match/${query}`,
   headers: {
-    'X-RapidAPI-Key': 'acac9841dcmsh8f034e6b2ce1787p1996dejsn647a457a7e29',
+    'X-RapidAPI-Key': '228422081bmshe889dec37a66624p1ebd42jsne3efa780d793',
     'X-RapidAPI-Host': 'rugby-live-data.p.rapidapi.com'
   }
 };
