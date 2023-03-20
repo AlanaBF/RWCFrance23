@@ -2,8 +2,8 @@ import { useState, useEffect } from "react"
 import getLiveData from "./LiveMatch_Api";
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 import liveMatchInfo from "./LiveMatchData.json"
-import { useParams } from 'react-router-dom'
-import './style.css'
+import { useParams } from 'react-router-dom';
+import './style.css';
 import Flags from '../../components/Flags/index'
 
 const LiveUpdates = () => {
