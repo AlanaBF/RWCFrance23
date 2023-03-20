@@ -4,6 +4,7 @@
   min-height: 80vh;
   position: relative;
   padding: 0;
+  padding-bottom: 30px;
 }
 
 .matches-title-container {
