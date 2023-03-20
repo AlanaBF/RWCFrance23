@@ -1,11 +1,39 @@
-import React from "react";
+import {useEffect, useState} from "react";
 import { Container, Row } from "react-bootstrap";
 import TeamCard from "../../components/TeamCard";
 import "./index.css";
 import Pooling from "./standings";
+import { getFilterOptions as getTeamsNames } from '../Matches/Matches.js';
 // import standings from 'standings';
 
 const Teams = () => {
+  // const [data, setData] = useState([]);
+  // const [loading, setLoading] = useState(false)
+  // const [error, setError] = useState({ isError: false, message: 'Something went wrong...' });
+
+  useEffect(() => {
+    // const fetchMatches = async () => {
+    //   try {
+    //     setLoading(true);
+    //     const data = await getMatches();
+    //     setData(data.results)
+    //     if (!data.results) {
+    //       throw new Error(data)
+    //     }
+    //     console.log(data)
+    //   } catch (error) {
+    //     setError({ isError: true, message: error.message })
+    //   } finally {
+    //     setLoading(false)
+    //   }
+    // }
+
+    // fetchMatches()
+
+  }, []);
+
+  // const filterOptions = getTeamsNames(data).teams;
+
   const country = [
     {
       id: 2417,
@@ -32,10 +60,9 @@ const Teams = () => {
   //get pools response
   //map response
     //for each pool 
-      //map team names and push it to an array
-  
-  //check if name is included by mapping and add the pool name
-  //check for pool
+      //map team names and push it to an array --- being done
+
+//get the id an go for team next match
   return (
     <Container fluid className="teams-page-container">
       <Container className="teams-banner">

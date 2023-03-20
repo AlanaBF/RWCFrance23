@@ -63,22 +63,7 @@ const Matches = () => {
   }, [team, venue, data]);
 
 
-  //Get all filterOptions  Names and Id's 
-  const getFilterOptions = () => {
-    const teams = {}
-    const venues = new Set([]);
-
-    data.forEach(match => {
-      if (!teams[match.home]) teams[match.home] = match.home_id;
-      if (!teams[match.away]) teams[match.away] = match.away_id;
-      venues.add(match.venue);
-    });
-
-    const venuesInArray = [...venues].map(venue => [venue]);
-    return { venues: venuesInArray, teams: Object.entries(teams) }
-  }
-
-  const filterOptions = getFilterOptions();
+  const filterOptions = getFilterOptions(data);
 
   return (
     <Container fluid className="matches-page-container">
@@ -124,5 +109,20 @@ const Matches = () => {
   )
 }
 
+
+  //Get all filterOptions  Names and Id's 
+ export const getFilterOptions = (data) => {
+    const teams = {}
+    const venues = new Set([]);
+
+    data.forEach(match => {
+      if (!teams[match.home]) teams[match.home] = match.home_id;
+      if (!teams[match.away]) teams[match.away] = match.away_id;
+      venues.add(match.venue);
+    });
+
+    const venuesInArray = [...venues].map(venue => [venue]);
+    return { venues: venuesInArray, teams: Object.entries(teams) }
+  }
 export default Matches
 
