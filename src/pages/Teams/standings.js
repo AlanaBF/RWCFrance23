@@ -447,31 +447,19 @@ const pooling = {
   },
 };
 
-//use useState to make this better
 const Pooling = () => {
-  let data = pooling.results.standings;
   const [pools, setPools] = useState([]);
 
-  let allPools = [];
-  data.map((pool) =>  {
-    let poolT = pool.teams;
-    let teamsNames = [];
-    for (let team of poolT) {
-      let teamName = team.name;
-      teamsNames.push(teamName);
-    }
-    let poolName = pool.table_name;
-    let poolTeams = {
-      name: poolName,
-      teams: teamsNames,
-    };
-    allPools.push(poolTeams);
-  });
-
   useEffect(() => {
+    const allPools = pooling.results.standings.map((pool) => ({
+      name: pool.table_name,
+      teams: pool.teams.map((team) => team.name),
+    }));
     setPools(allPools);
   }, []);
-  console.log(pools);
-};
-export default Pooling;
 
+  console.log(pools);
+  return null;
+};
+
+export default Pooling;
