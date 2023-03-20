@@ -1,0 +1,61 @@
+.live-card-container {
+  width: 100%;
+  background: var(--bg-darkblue);
+  margin: 3px 0;
+  color: #fafafa;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  border-radius: 25px;
+}
+
+.live-page-container {
+  background-color: var(--bg-blue);
+  background-image: url('../../assets/images/backgroundShapes.png');
+  min-height: 80vh;
+  position: relative;
+  padding: 0;
+}
+
+.live-title-container {
+  padding: 20px 10px 10px 20px;
+  background-color: #2c2cff;
+}
+
+.live-title {
+  padding-left: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.live-content {
+  padding-top: 30px;
+
+}
+
+.live-home-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.live-away-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.notification {
+  color: aliceblue;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
