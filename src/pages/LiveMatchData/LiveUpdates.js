@@ -3,7 +3,6 @@ import getLiveData from "./LiveMatch_Api";
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 import liveMatchInfo from "./LiveMatchData.json"
 import { useParams } from 'react-router-dom'
-import Flags from '../../components/Flags'
 import './style.css'
 
 const LiveUpdates = () => {
@@ -52,8 +51,7 @@ const LiveUpdates = () => {
               <h1> Venue: {data.match?.venue} </h1>
               <h1> {data.match?.home_team} vs {data.match?.away_team}</h1>
               <div className='live-card-flags '>
-                {/* <Flags team={home} />
-                <Flags team={away} /> */}
+             
               </div>
               <h4> Score: {data.match?.home_score} : {data.match?.away_score}</h4>
               <h4>Match Referees: {data.referees}</h4>
