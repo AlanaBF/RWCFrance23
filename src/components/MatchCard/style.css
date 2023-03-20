@@ -52,6 +52,13 @@
  
 }
 
+.match-card-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .match-card-right a {
   text-decoration: none;
   text-transform: uppercase;
