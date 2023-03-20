@@ -4,10 +4,10 @@ import TeamCard from "../../components/TeamCard";
 import "./index.css";
 import Pooling from "./standings";
 import { getFilterOptions as getTeamsNames } from '../Matches/Matches.js';
-// import standings from 'standings';
+import tempData from "../Matches/Fixtures.json"
+
 
 const Teams = () => {
-  // const [data, setData] = useState([]);
   // const [loading, setLoading] = useState(false)
   // const [error, setError] = useState({ isError: false, message: 'Something went wrong...' });
 
@@ -31,38 +31,11 @@ const Teams = () => {
     // fetchMatches()
 
   }, []);
-
-  // const filterOptions = getTeamsNames(data).teams;
-
-  const country = [
-    {
-      id: 2417,
-      name: "Argentina",
-    },
-    {
-      id: 317,
-      name: "Australia",
-    },
-    {
-      id: 58739,
-      name: "Chile",
-    },
-    {
-      id: 1667,
-      name: "England",
-    },
-    {
-      id: 2879,
-      name: "Fiji",
-    }
-  ];
-
-  //get pools response
-  //map response
-    //for each pool 
-      //map team names and push it to an array --- being done
-
-//get the id an go for team next match
+  const [data, setData] = useState(tempData.results);
+  const filterOptions = getTeamsNames(data).teams;
+  console.log(filterOptions);
+  
+  //from filtered options I need to use the id to get next match and venue
   return (
     <Container fluid className="teams-page-container">
       <Container className="teams-banner">
@@ -88,7 +61,7 @@ const Teams = () => {
         </Container>
         <Container className="teams-content">
           <Row className="teams-card-container">
-            {country.map((team) => 
+            {data.map((team) => 
               <TeamCard
                 key={team.id}
                 home= {team.name}

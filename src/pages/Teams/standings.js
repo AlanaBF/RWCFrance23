@@ -1,10 +1,4 @@
 import { useState, useEffect } from "react";
-//let pools = {} pasale primero todo el content
-// let data = response.results.standings
-//data.map(pool =>
-//let name = table_name
-//pools.push(pool)
-//pool.teams.map(team => let team_name = team.name)
 const pooling = {
   meta: {
     title: "Live Rugby API - Standings Rugby World Cup - 2020",
@@ -446,20 +440,22 @@ const pooling = {
     ],
   },
 };
-
 const Pooling = () => {
   const [pools, setPools] = useState([]);
-
+  
   useEffect(() => {
-    const allPools = pooling.results.standings.map((pool) => ({
-      name: pool.table_name,
-      teams: pool.teams.map((team) => team.name),
-    }));
-    setPools(allPools);
+  const allPools = pooling.results.standings.map((pool) => ({
+  name: pool.table_name,
+  teams: pool.teams.map((team) => ({
+  name: team.name,
+  position: team.position
+  })),
+  }));
+  setPools(allPools);
   }, []);
-
+  
   console.log(pools);
   return null;
-};
-
-export default Pooling;
+  };
+  
+  export default Pooling;
