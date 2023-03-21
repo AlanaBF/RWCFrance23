@@ -1,8 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
-import data from "./exampleData.json";
+import tempData from "./exampleData.json";
 import "./style.css";
 
+
 const ExampleUpdate = () => {
+  const data = tempData.results
   return (
     <Container fluid className="live-page-container">
       <div>
