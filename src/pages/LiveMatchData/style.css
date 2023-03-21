@@ -5,7 +5,8 @@
   color: #fafafa;
   font-size: 1rem;
   line-height: 1.2rem;
-  border-radius: 25px;
+  border-radius: 15px;
+  padding: 1rem;
 }
 
 .live-page-container {
