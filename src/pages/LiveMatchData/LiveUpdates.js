@@ -60,7 +60,7 @@ const LiveUpdates = () => {
                 <Row>
                   <Col xs={12} lg={6}>
                     <Container className="live-card-container">
-                      <h4>Match Referees: {data.referees?.map(referee => <div key={referee.name}>Name: {referee.name}, Country: {referee.country}, Role: {referee.role}</div>)}</h4>
+                      <h4>Match Referees:</h4> <div>{data.referees?.map(referee => <div key={referee.name}>Name: {referee.name}, Country: {referee.country}, Role: {referee.role}</div>)}</div>
                     </Container>
                   </Col>
                 </Row>
@@ -91,12 +91,14 @@ const LiveUpdates = () => {
                 <Row>
                   <Col xs={12} lg={6}>
                     <Container className="live-card-container">
-                      <div>Teamsheet: {data.home?.teamsheet.map(player => <div key={player.player_id}>{player.name}, {player.position}</div>)}</div>
+                      <h4>Teamsheet</h4>
+                      <div>Player Name and Player Number</div> {data.home?.teamsheet.map(player => <div key={player.player_id}>{player.name}, {player.position}</div>)}
                     </Container>
                   </Col>
                   <Col xs={12} lg={6}>
                     <Container className="live-card-container">
-                      <div>Teamsheet: {data.away?.teamsheet.map(player => <div key={player.player_id}>{player.name}, {player.position}</div>)}</div>
+                      <h4>Teamsheet:</h4>
+                      <div>Player Name and Player Number</div>{data.away?.teamsheet.map(player => <div key={player.player_id}>{player.name}, {player.position}</div>)}
                     </Container>
                   </Col>
                 </Row>
@@ -104,28 +106,28 @@ const LiveUpdates = () => {
               <Container>
                 <Row>
                   <Col xs={12} lg={6}>
-                    <Container className="live-card-container"><h4 className="live-away-stats">
-                      Team stats:</h4></Container>
-                    <Container className="live-card-container">Attack: {data.home?.team_stats.attack.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Defence: {data.home?.team_stats.defence.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Discipline: {data.home?.team_stats.discipline.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Kicking:{data.home?.team_stats.kicking.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Breakdown:{data.home?.team_stats.breakdown.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Lineouts: {data.home?.team_stats.lineouts.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Scrums: {data.home?.team_stats.scrums.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Possession: {data.home?.team_stats.possession.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container">
+                      <h4 className="live-away-stats">Team stats:</h4></Container>
+                    <Container className="live-card-container"><h4>Attack</h4>{data.home?.team_stats.attack.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Defence</h4>{data.home?.team_stats.defence.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Discipline</h4> {data.home?.team_stats.discipline.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Kicking</h4>{data.home?.team_stats.kicking.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Breakdown</h4>{data.home?.team_stats.breakdown.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Lineouts</h4>{data.home?.team_stats.lineouts.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Scrums</h4>{data.home?.team_stats.scrums.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Possession</h4>{data.home?.team_stats.possession.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
                   </Col>
                   <Col xs={12} lg={6}>
-                    <Container className="live-card-container"><h4 className="live-away-stats">
-                      Team stats:</h4></Container>
-                    <Container className="live-card-container">Attack: {data.away?.team_stats.attack.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Defence: {data.away?.team_stats.defence.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Discipline: {data.away?.team_stats.discipline.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Kicking:{data.away?.team_stats.kicking.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Breakdown:{data.away?.team_stats.breakdown.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Lineouts: {data.away?.team_stats.lineouts.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Scrums: {data.away?.team_stats.scrums.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
-                    <Container className="live-card-container">Possession: {data.away?.team_stats.possession.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container">
+                      <h4 className="live-away-stats">Team stats:</h4></Container>
+                    <Container className="live-card-container"><h4>Attack</h4>{data.away?.team_stats.attack.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Defence</h4> {data.away?.team_stats.defence.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Discipline</h4> {data.away?.team_stats.discipline.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Kicking</h4>{data.away?.team_stats.kicking.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Breakdown</h4>{data.away?.team_stats.breakdown.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Lineouts</h4>{data.away?.team_stats.lineouts.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Scrums</h4> {data.away?.team_stats.scrums.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
+                    <Container className="live-card-container"><h4>Possession</h4>{data.away?.team_stats.possession.map(stats => <div key={stats.stat}>{stats.stat}:{stats.value}</div>)}</Container>
                   </Col>
                 </Row>
               </Container>
