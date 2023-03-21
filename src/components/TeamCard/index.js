@@ -2,30 +2,39 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./index.css";
 // import moment from "moment-timezone";
 
-const TeamCard = ({away, pool, stade, home, id }) => {
+const TeamCard = ({ away, stade, home, position }) => {
   //   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
     <Container fluid className="team-card-container">
       <Row className="p-3 card-body">
-        <Col xs={12} md={3} className={"team-card-column"}>
+        <Col xs={12} md={1} className={"team-card-column"} style={{ margin: 'auto 0'}}>
+          <span>{position}</span>
+        </Col>
+        <Col xs={12} md={2} className={"team-card-column"} style={{ margin: 'auto 0'}}>
           <span>Country icon</span>
         </Col>
-        <Col xs={12} md={3} className={"team-card-column team-card-center cvc"} style={{display: 'flex', flexDirection: 'column'}}>
+        <Col
+          xs={12}
+          md={4}
+          className={"team-card-column team-card-center cvc"}
+          style={{ margin: 'auto 0'}}
+        >
           <h3>{home}</h3>
-          <h5 className="ranking-p">Ranking Position</h5>
         </Col>
-        <Col xs={12} md={3} className={"team-card-column team-card-center"} style={{display: 'flex', flexDirection: 'column'}}>
+        <Col
+          xs={12}
+          md={5}
+          className={"team-card-column team-card-center"}
+          style={{ display: "flex", flexDirection: "column" }}
+        >
           <h6 className="section-title">NEXT RWC MATCH</h6>
-          <h5>{home} v {away}</h5>
           <h5>
-            {pool} <span> {stade}</span>
+            {home} v {away}
           </h5>
-        </Col>
-        <Col xs={12} md={3} className={"team-card-column"} style={{display: 'flex', flexDirection: 'column'}}>
-          <h6 className="section-title">HIGHEST RWC FINISH</h6>
-          <h5>RUNNER UP</h5>
-          <span>177,182,922</span>
+          <h5>
+            <span> {stade}</span>
+          </h5>
         </Col>
       </Row>
     </Container>
@@ -37,20 +46,20 @@ export default TeamCard;
 //Team Name - Team id
 //Ranking position
 //Next Match
-  //Vs
-  //pool - stadium
+//Vs
+//pool - stadium
 //Highest RWC Finish
 
 //order by closest to day
 
 //load a card for each team
-  //use de countryCode.json for country name 
-  //with the id - make an api call to fixtures by team endpoint
-    //look if exist any comp_name: "Rugby Union World Cup"
-    //If so, get the closes to date one and load:
-      //vs team
-      //pool
-      //stadium
+//use de countryCode.json for country name
+//with the id - make an api call to fixtures by team endpoint
+//look if exist any comp_name: "Rugby Union World Cup"
+//If so, get the closes to date one and load:
+//vs team
+//pool
+//stadium
 
 //We need to find pool, wordl ranking, highest rwc finish
 

@@ -4,8 +4,7 @@ import { getFilterOptions as getTeamsNames } from "../Matches/Matches.js";
 import tempData from "../Matches/Fixtures.json";
 import "./index.css";
 import Pooling from "./standings";
-
-
+import contryCodes from "./countryCode.json";
 
 const Teams = () => {
   const [pools, setPools] = useState([]);
@@ -450,27 +449,25 @@ const Teams = () => {
       ],
     },
   };
-  
 
   useEffect(() => {
-    //get pools
+//Get pools
+
     const allPools = pooling.results.standings.map((pool) => ({
       name: pool.table_name,
       teams: pool.teams.map((team) => ({
-      name: team.name,
-      position: team.position,
-      id: team.id
-      }))
-      }));
-      //order pools with ranking position
-      const sortedPools = allPools.map((pool) => ({
-        ...pool,
-        teams: pool.teams.sort((teamA, teamB) => teamA.position - teamB.position)
-      }));
-      
-      //with id check on fixtures for next match
+        name: team.name,
+        position: team.position,
+        id: team.id,
+      })),
+    }));
+    //order pools with ranking position
+    const sortedPools = allPools.map((pool) => ({
+      ...pool,
+      teams: pool.teams.sort((teamA, teamB) => teamA.position - teamB.position),
+    }));
 
-      setPools(sortedPools);
+    setPools(sortedPools);
     // const fetchMatches = async () => {
     //   try {
     //     setLoading(true);
@@ -489,6 +486,8 @@ const Teams = () => {
     // fetchMatches()
   }, []);
   console.log(pools);
+
+  //filter by name and get position
 
   return (
     <Container fluid className="teams-page-container">
@@ -509,13 +508,15 @@ const Teams = () => {
             <h2 className="teams-title">All teams</h2>
           </Container>
         </div>
-        <Container>
-          <p>I don't see the pool</p>
-          {pools.map(p => 
-           <Pooling pool_name={p.name} teamsCard={p.teams} key={p.name}/>
-           )}
+        <Container className="pools">
+          {pools.map((p) => (
+            <Pooling
+              pool_name={p.name}
+              teamsCard={p.teams}
+              key={p.name}
+            />
+          ))}
         </Container>
-        
       </Container>
     </Container>
   );
