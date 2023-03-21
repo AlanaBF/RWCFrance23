@@ -92,3 +92,9 @@ h3 {
   gap: 20px;
   padding: 50px 30px;
 }
+@media(max-width: 1250px) {
+  .pools {
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+}

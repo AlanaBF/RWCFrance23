@@ -16,7 +16,7 @@ const TeamCard = ({ away, stade, home, position, name, played , points, pool  })
           xs={12}
           md={4}
           className={"team-card-column team-card-center cvc"}
-          style={{ margin: 'auto 0'}}
+          style={{ margin: 'auto 0', padding: '10px'}}
         >
           <Flags team={name} />
           <h3>{name}</h3>
@@ -24,8 +24,8 @@ const TeamCard = ({ away, stade, home, position, name, played , points, pool  })
         <Col
           xs={12}
           md={5}
-          className={"team-card-column team-card-center"}
-          style={{ display: "flex", flexDirection: "column" }}
+          className={"team-card-column"}
+          style={{ display: "flex", flexDirection: "column", padding: '10px', margin: 'auto 0'}}
         >
           <h6 className="section-title">NEXT RWC MATCH</h6>
           <h5>
@@ -35,7 +35,7 @@ const TeamCard = ({ away, stade, home, position, name, played , points, pool  })
             <span> {stade}</span>
           </h5>
         </Col>
-        <Col xs={12} md={2} className={"team-card-column"} style={{ margin: 'auto 0'}}>
+        <Col xs={12} md={2} className={"team-card-column team-card-center"} style={{ margin: 'auto 0', padding: '10px'}}>
           <p><b>PL:</b>   {played}</p>
           <p><b>PTS:</b>  {points}</p>
         </Col>
