@@ -5,6 +5,24 @@
   border-radius: 25px; 
   display: flex;
   align-items: center;
+  color: var(--color-darkblue);
+}
+.A {
+  background-color: var(--color-green);
+  color: var(--color-darkblue);
+}
+.B {
+  background-color: var(--color-purple);
+  color: var(--color-darkblue);
+}
+.C {
+  background-color: var(--color-pink);
+  color: var(--color-darkblue);
+}
+.D {
+  background-color: var(--color-lightblue);
+  color: var(--color-darkblue);
+  
 }
 .card-body {
   height: auto;
@@ -24,7 +42,10 @@
   padding-left: 30px;
 }
 .cvc {
-  justify-content: space-between;
+  display: flex;
+  flex-direction: row !important;
+  gap: 20px;
+  align-items: center;
 }
 .team-card-container h3 {
   font-size: 22px;
@@ -34,10 +55,11 @@
   font-size: 18px;
 }
 .team-card-container h5 {
-  font-size: 16px;
+  font-size: 17px;
 }
 .team-card-container h6 {
   font-size: 14px;
+  
 }
 
 .team-card-container span {
@@ -47,4 +69,9 @@
   font-size: 13px;
   margin-bottom: 15px;
   padding-top: 5px;
+}
+.position span {
+  color: var(--color-darkblue);
+  font-size: 2rem;
+  font-weight: 500;
 }

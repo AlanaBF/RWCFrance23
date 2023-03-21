@@ -1,6 +1,17 @@
 .pool_title {
     text-align: center;
     color: #fff;
-    text-decoration: underline;
+    font-weight: 700;
     font-size: 2rem;
 }
+
+.pool_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pool_header h5 {
+    text-decoration: underline;
+}
+
+

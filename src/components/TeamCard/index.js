@@ -1,18 +1,16 @@
 import { Container, Row, Col } from "react-bootstrap";
+import Flags from '../Flags'
 import "./index.css";
 // import moment from "moment-timezone";
 
-const TeamCard = ({ away, stade, home, position }) => {
+const TeamCard = ({ away, stade, home, position, name, played , points, pool  }) => {
   //   const { month, dayDate, day, frenchTime, time } = formatDate(date);
 
   return (
-    <Container fluid className="team-card-container">
+    <Container fluid className={`team-card-container ${pool}`}>
       <Row className="p-3 card-body">
-        <Col xs={12} md={1} className={"team-card-column"} style={{ margin: 'auto 0'}}>
+        <Col xs={12} md={1} className={"team-card-column position"} style={{ margin: 'auto 0'}}>
           <span>{position}</span>
-        </Col>
-        <Col xs={12} md={2} className={"team-card-column"} style={{ margin: 'auto 0'}}>
-          <span>Country icon</span>
         </Col>
         <Col
           xs={12}
@@ -20,7 +18,8 @@ const TeamCard = ({ away, stade, home, position }) => {
           className={"team-card-column team-card-center cvc"}
           style={{ margin: 'auto 0'}}
         >
-          <h3>{home}</h3>
+          <Flags team={name} />
+          <h3>{name}</h3>
         </Col>
         <Col
           xs={12}
@@ -30,11 +29,15 @@ const TeamCard = ({ away, stade, home, position }) => {
         >
           <h6 className="section-title">NEXT RWC MATCH</h6>
           <h5>
-            {home} v {away}
+            <b>{home} v {away}</b>
           </h5>
           <h5>
             <span> {stade}</span>
           </h5>
+        </Col>
+        <Col xs={12} md={2} className={"team-card-column"} style={{ margin: 'auto 0'}}>
+          <p><b>PL:</b>   {played}</p>
+          <p><b>PTS:</b>  {points}</p>
         </Col>
       </Row>
     </Container>

@@ -448,8 +448,10 @@ const Teams = () => {
       name: pool.table_name,
       teams: pool.teams.map((team) => ({
         name: team.name,
+        played: team.played,
+        points: team.points,
         position: team.position,
-        id: team.id,
+        id: team.id
       })),
     }));
     //order pools with ranking position
@@ -476,9 +478,7 @@ const Teams = () => {
     // }
     // fetchMatches()
   }, []);
-  
-  console.log(pools);
-  //filter by name and get position
+ 
 
   return (
     <Container fluid className="teams-page-container">
@@ -499,7 +499,7 @@ const Teams = () => {
             <h2 className="teams-title">All teams</h2>
           </Container>
         </div>
-        <Container className="pools">
+        <Container fluid className="pools">
           {pools.map((p) => (
             <Pooling
               pool_name={p.name}
