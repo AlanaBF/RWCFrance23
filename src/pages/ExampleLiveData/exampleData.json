@@ -1,0 +1,2319 @@
+{
+  "meta": {
+    "title": "Live Rugby API - Match Feed",
+    "description": "Detailed match data for Crusaders v Highlanders - Super Rugby Aotearoa, 2020",
+    "fields": {
+      "match": {
+        "id": "Integer",
+        "comp_id": "Integer",
+        "comp_name": "String",
+        "season": "Integer",
+        "status": "String - Not Started, First Half, Half Time, Second Half, Full Time, Result, Postponed, Cancelled",
+        "match_minute": "Integer",
+        "venue": "Integer",
+        "game_week": "Integer",
+        "home_team": "String",
+        "away_team": "String",
+        "home_id": "Integer",
+        "away_id": "Integer",
+        "date": "Timestamp - ISO 8061 - always UTC",
+        "home_score": "Integer",
+        "away_score": "Integer",
+        "home_tries": "Integer",
+        "away_tries": "Integer",
+        "home_conversions": "Integer",
+        "away_conversions": "Integer",
+        "home_penalties": "Integer",
+        "away_penalties": "Integer",
+        "home_drop_goals": "Integer",
+        "away_drop_goals": "Integer",
+        "updated": "Timestamp - ISO 8061 - always UTC"
+      },
+      "referees_array": {
+        "name": "String",
+        "country": "String",
+        "role": "String"
+      },
+      "home_away_objects": {
+        "teamsheet_array": {
+          "player_id": "Integer",
+          "name": "String",
+          "position": "Integer - rugby positions from 1-23",
+          "substitute": "Boolean"
+        },
+        "team_stats": {
+          "stat_name": "String - attack, defence, discipline, kicking, breakdown, lineouts, scrums, possession",
+          "stat_array": {
+            "stat": "String - stat name",
+            "value": "String - could be number, string, or double (representing a percentage)"
+          }
+        }
+      },
+      "events_array": {
+        "id": "Integer",
+        "time": "Integer",
+        "team_id": "Integer",
+        "type": "String - Try, Penalty Try, Conversion, Penalty, Drop Goal, Missed Drop Goal, Substitution",
+        "player_1_name": "String - For Penalty Tries, value = No Player",
+        "player_1_id": "Integer - For Penalty Tries, value = 0",
+        "player_2_name": "String - only visible if type = Substitution",
+        "player_2_id": "Integer - only visible if type = Substitution",
+        "home_or_away": "String - home, away"
+      }
+    }
+  },
+  "results": {
+    "match": {
+      "id": 3195835,
+      "comp_id": 2142,
+      "comp_name": "Super Rugby Aotearoa",
+      "season": "2020",
+      "status": "Result",
+      "match_minute": 80,
+      "venue": "Orangetheory Stadium",
+      "game_week": 9,
+      "home_team": "Crusaders",
+      "away_team": "Highlanders",
+      "home_id": 305,
+      "away_id": 302,
+      "date": "2020-08-09T03:35:00+00:00",
+      "home_score": 32,
+      "away_score": 22,
+      "home_tries": 4,
+      "away_tries": 3,
+      "home_conversions": 3,
+      "away_conversions": 2,
+      "home_penalties": 2,
+      "away_penalties": 1,
+      "home_drop_goals": 0,
+      "away_drop_goals": 0,
+      "updated": "2023-03-05T11:00:58+00:00"
+    },
+    "referees": [
+      {
+        "name": "Paul Williams",
+        "country": "New Zealand",
+        "role": "referee"
+      },
+      {
+        "name": "Michael Fraser",
+        "country": "New Zealand",
+        "role": "assistant"
+      },
+      {
+        "name": "Brendon Pickerill",
+        "country": "New Zealand",
+        "role": "assistant"
+      },
+      {
+        "name": "Ben O'Keeffe",
+        "country": "New Zealand",
+        "role": "TMO"
+      }
+    ],
+    "home": {
+      "teamsheet": [
+        {
+          "player_id": 168972,
+          "name": "Will Jordan",
+          "position": 15,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "3",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "14",
+            "metres": "118",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "2",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "10",
+            "bad_passes": "1",
+            "turnovers_conceded": "3",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 156702,
+          "name": "Sevu Reece",
+          "position": 14,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.57",
+            "defenders_beaten": "8",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "10",
+            "metres": "104",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "1",
+            "missed_tackles": "3",
+            "penalty_goals": "0",
+            "passes": "6",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 168960,
+          "name": "Braydon Ennor",
+          "position": 13,
+          "substitute": false,
+          "match_stats": {
+            "tries": "1",
+            "tackles": "9",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.82",
+            "defenders_beaten": "3",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "8",
+            "metres": "32",
+            "missed_penalty_goals": "0",
+            "points": "5",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "2",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "3"
+          }
+        },
+        {
+          "player_id": 133770,
+          "name": "Jack Goodhue",
+          "position": 12,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "10",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.77",
+            "defenders_beaten": "3",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "13",
+            "metres": "49",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "3",
+            "penalty_goals": "0",
+            "passes": "15",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 140028,
+          "name": "George Bridge",
+          "position": 11,
+          "substitute": false,
+          "match_stats": {
+            "tries": "2",
+            "tackles": "5",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "2",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "9",
+            "metres": "43",
+            "missed_penalty_goals": "0",
+            "points": "10",
+            "conversion_goals": "0",
+            "try_assists": "1",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "4",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "3"
+          }
+        },
+        {
+          "player_id": 126474,
+          "name": "Richie Mo'unga",
+          "position": 10,
+          "substitute": false,
+          "match_stats": {
+            "tries": "1",
+            "tackles": "9",
+            "missed_conversion_goals": "1",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.82",
+            "defenders_beaten": "1",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "12",
+            "metres": "94",
+            "missed_penalty_goals": "0",
+            "points": "17",
+            "conversion_goals": "3",
+            "try_assists": "1",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "2",
+            "passes": "28",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "3"
+          }
+        },
+        {
+          "player_id": 118824,
+          "name": "Bryn Hall",
+          "position": 9,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "1",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.33",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "7",
+            "metres": "34",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "43",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "3"
+          }
+        },
+        {
+          "player_id": 115806,
+          "name": "Joe Moody",
+          "position": 1,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "1",
+            "metres": "2",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 112860,
+          "name": "Codie Taylor",
+          "position": 2,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "10",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "1",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "9",
+            "metres": "68",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "7",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "7",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 132000,
+          "name": "Michael Alaalatoa",
+          "position": 3,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "8",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.80",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "6",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 62526,
+          "name": "Sam Whitelock",
+          "position": 4,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "10",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.91",
+            "defenders_beaten": "0",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "2",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "6",
+            "bad_passes": "1",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 149664,
+          "name": "Quinten Strange",
+          "position": 5,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "3",
+            "rucks_won": "0",
+            "tackle_success": "0.50",
+            "defenders_beaten": "1",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "6",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "3",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 130416,
+          "name": "Tom Sanders",
+          "position": 6,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "5",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.71",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "0",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 165000,
+          "name": "Tom Christie",
+          "position": 7,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "13",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.87",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "7",
+            "metres": "15",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "3",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 126444,
+          "name": "Whetu Douglas",
+          "position": 8,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "10",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.83",
+            "defenders_beaten": "1",
+            "offload": "3",
+            "drop_goals_converted": "0",
+            "runs": "15",
+            "metres": "23",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "7",
+            "bad_passes": "1",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 157056,
+          "name": "Andrew Makalio",
+          "position": 16,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.67",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "2",
+            "metres": "6",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "6",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 134226,
+          "name": "George Bower",
+          "position": 17,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "8",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.62",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "6",
+            "metres": "5",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "5",
+            "penalty_goals": "0",
+            "passes": "2",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 147540,
+          "name": "Oli Jager",
+          "position": 18,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "0",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "0",
+            "metres": "0",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 62514,
+          "name": "Luke Romano",
+          "position": 19,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "6",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 175506,
+          "name": "Sione Havili",
+          "position": 20,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "2",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.67",
+            "defenders_beaten": "2",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "30",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 126342,
+          "name": "Mitchell Drummond",
+          "position": 21,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "2",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "5",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "32",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 173526,
+          "name": "Brett Cameron",
+          "position": 22,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "0",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "0",
+            "metres": "0",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 184710,
+          "name": "Leicester Fainga'anuku",
+          "position": 23,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "1",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "0",
+            "metres": "0",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        }
+      ],
+      "team_stats": {
+        "attack": [
+          {
+            "stat": "carries_crossed_gain_line",
+            "value": "52"
+          },
+          {
+            "stat": "carries_metres",
+            "value": "648"
+          },
+          {
+            "stat": "carries_not_made_gain_line",
+            "value": "64"
+          },
+          {
+            "stat": "clean_breaks",
+            "value": "21"
+          },
+          {
+            "stat": "defenders_beaten",
+            "value": "25"
+          },
+          {
+            "stat": "offload",
+            "value": "16"
+          },
+          {
+            "stat": "passes",
+            "value": "168"
+          },
+          {
+            "stat": "runs",
+            "value": "138"
+          },
+          {
+            "stat": "turnovers_conceded",
+            "value": "16"
+          }
+        ],
+        "defence": [
+          {
+            "stat": "missed_tackles",
+            "value": "32"
+          },
+          {
+            "stat": "tackles",
+            "value": "125"
+          },
+          {
+            "stat": "turnovers_won",
+            "value": "6"
+          }
+        ],
+        "discipline": [
+          {
+            "stat": "penalties_conceded",
+            "value": "12"
+          },
+          {
+            "stat": "red_card_second_yellow",
+            "value": "0"
+          },
+          {
+            "stat": "red_cards",
+            "value": "0"
+          },
+          {
+            "stat": "yellow_cards",
+            "value": "0"
+          }
+        ],
+        "kicking": [
+          {
+            "stat": "conversion_goals",
+            "value": "3"
+          },
+          {
+            "stat": "kicks_from_hand",
+            "value": "10"
+          },
+          {
+            "stat": "missed_conversion_goals",
+            "value": "1"
+          },
+          {
+            "stat": "missed_penalty_goals",
+            "value": "0"
+          },
+          {
+            "stat": "penalty_goals",
+            "value": "2"
+          }
+        ],
+        "breakdown": [
+          {
+            "stat": "mauls_lost",
+            "value": "0"
+          },
+          {
+            "stat": "mauls_total",
+            "value": "6"
+          },
+          {
+            "stat": "mauls_won",
+            "value": "6"
+          },
+          {
+            "stat": "mauls_won_penalty",
+            "value": "1"
+          },
+          {
+            "stat": "mauls_won_try",
+            "value": "0"
+          },
+          {
+            "stat": "rucks_lost",
+            "value": "11"
+          },
+          {
+            "stat": "rucks_total",
+            "value": "99"
+          },
+          {
+            "stat": "rucks_won",
+            "value": "88"
+          }
+        ],
+        "lineouts": [
+          {
+            "stat": "lineout_success",
+            "value": "0.93"
+          },
+          {
+            "stat": "lineout_won_steal",
+            "value": "1"
+          },
+          {
+            "stat": "lineouts_Lost",
+            "value": "1"
+          },
+          {
+            "stat": "lineouts_won",
+            "value": "14"
+          }
+        ],
+        "scrums": [
+          {
+            "stat": "scrums_lost",
+            "value": "0"
+          },
+          {
+            "stat": "scrums_success",
+            "value": "1.00"
+          },
+          {
+            "stat": "scrums_won",
+            "value": "2"
+          }
+        ],
+        "possession": [
+          {
+            "stat": "possession",
+            "value": "0.50"
+          },
+          {
+            "stat": "pc_possession_first",
+            "value": "0.50"
+          },
+          {
+            "stat": "pc_possession_second",
+            "value": "0.50"
+          },
+          {
+            "stat": "ball_possession_last_10_mins",
+            "value": "0.61"
+          }
+        ]
+      }
+    },
+    "away": {
+      "teamsheet": [
+        {
+          "player_id": 133386,
+          "name": "Mitch Hunt",
+          "position": 15,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "2",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "2",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "6",
+            "metres": "13",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "1",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "8",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 149736,
+          "name": "Josh McKay",
+          "position": 14,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.80",
+            "defenders_beaten": "1",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "8",
+            "metres": "41",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 120432,
+          "name": "Michael Collins",
+          "position": 13,
+          "substitute": false,
+          "match_stats": {
+            "tries": "1",
+            "tackles": "11",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.85",
+            "defenders_beaten": "2",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "10",
+            "metres": "16",
+            "missed_penalty_goals": "0",
+            "points": "5",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "11",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 141906,
+          "name": "Sio Tomkinson",
+          "position": 12,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "11",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.79",
+            "defenders_beaten": "2",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "6",
+            "metres": "14",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "3",
+            "penalty_goals": "0",
+            "passes": "4",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 165168,
+          "name": "Jona Nareki",
+          "position": 11,
+          "substitute": false,
+          "match_stats": {
+            "tries": "1",
+            "tackles": "1",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.50",
+            "defenders_beaten": "1",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "10",
+            "metres": "105",
+            "missed_penalty_goals": "0",
+            "points": "5",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "2",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 140352,
+          "name": "Josh Ioane",
+          "position": 10,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "1",
+            "missed_conversion_goals": "1",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.33",
+            "defenders_beaten": "9",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "13",
+            "metres": "89",
+            "missed_penalty_goals": "1",
+            "points": "7",
+            "conversion_goals": "2",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "1",
+            "passes": "23",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "3"
+          }
+        },
+        {
+          "player_id": 69492,
+          "name": "Aaron Smith",
+          "position": 9,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.60",
+            "defenders_beaten": "3",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "10",
+            "metres": "44",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "1",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "83",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 149652,
+          "name": "Ayden Johnstone",
+          "position": 1,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "5",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "1",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "8",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "6",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 63900,
+          "name": "Ash Dixon",
+          "position": 2,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "9",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "1",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "15",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "8",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 131700,
+          "name": "Siate Tokolahi",
+          "position": 3,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.67",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "5",
+            "metres": "2",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 152016,
+          "name": "Pari  Parkinson",
+          "position": 4,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "7",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "2",
+            "rucks_won": "0",
+            "tackle_success": "0.78",
+            "defenders_beaten": "1",
+            "offload": "1",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "14",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "4",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 120438,
+          "name": "Jack Whetton",
+          "position": 5,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "7",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "1",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "6",
+            "metres": "23",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 157050,
+          "name": "Shannon Frizell",
+          "position": 6,
+          "substitute": false,
+          "match_stats": {
+            "tries": "1",
+            "tackles": "15",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.94",
+            "defenders_beaten": "3",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "10",
+            "metres": "46",
+            "missed_penalty_goals": "0",
+            "points": "5",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "6",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 144006,
+          "name": "Dillon Hunt",
+          "position": 7,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "14",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.88",
+            "defenders_beaten": "4",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "8",
+            "metres": "50",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "2",
+            "penalty_goals": "0",
+            "passes": "6",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 149682,
+          "name": "Marino Mikaele-Tu'u",
+          "position": 8,
+          "substitute": false,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "9",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.75",
+            "defenders_beaten": "1",
+            "offload": "2",
+            "drop_goals_converted": "0",
+            "runs": "12",
+            "metres": "28",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "3",
+            "penalty_goals": "0",
+            "passes": "4",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "1"
+          }
+        },
+        {
+          "player_id": 102852,
+          "name": "Liam Coltman",
+          "position": 16,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "0",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "2",
+            "metres": "8",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "2",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 125058,
+          "name": "Dan Lienert-Brown",
+          "position": 17,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "4",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "1",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "2",
+            "bad_passes": "0",
+            "turnovers_conceded": "1",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 141582,
+          "name": "Jeff Thwaites",
+          "position": 18,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.75",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "1",
+            "metres": "5",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 173436,
+          "name": "Manaaki Selby-Rickit",
+          "position": 19,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "10",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.91",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "2",
+            "metres": "1",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "2",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 162096,
+          "name": "Teariki Ben-Nicholas",
+          "position": 20,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "2",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "4",
+            "metres": "3",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 188592,
+          "name": "Folau Fakatava",
+          "position": 21,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "0",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "0.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "0",
+            "metres": "0",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        },
+        {
+          "player_id": 185064,
+          "name": "Ngatungane Punivai",
+          "position": 22,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "1",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "1",
+            "rucks_won": "0",
+            "tackle_success": "0.50",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "24",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "1",
+            "penalty_goals": "0",
+            "passes": "1",
+            "bad_passes": "0",
+            "turnovers_conceded": "0",
+            "rucks_lost": "0",
+            "clean_breaks": "2"
+          }
+        },
+        {
+          "player_id": 134028,
+          "name": "Jesse Parete",
+          "position": 23,
+          "substitute": true,
+          "match_stats": {
+            "tries": "0",
+            "tackles": "3",
+            "missed_conversion_goals": "0",
+            "dominant_tackles": "0",
+            "penalties_conceded": "0",
+            "rucks_won": "0",
+            "tackle_success": "1.00",
+            "defenders_beaten": "0",
+            "offload": "0",
+            "drop_goals_converted": "0",
+            "runs": "3",
+            "metres": "11",
+            "missed_penalty_goals": "0",
+            "points": "0",
+            "conversion_goals": "0",
+            "try_assists": "0",
+            "drop_goal_missed": "0",
+            "lineouts_won": "0",
+            "missed_tackles": "0",
+            "penalty_goals": "0",
+            "passes": "0",
+            "bad_passes": "0",
+            "turnovers_conceded": "2",
+            "rucks_lost": "0",
+            "clean_breaks": "0"
+          }
+        }
+      ],
+      "team_stats": {
+        "attack": [
+          {
+            "stat": "carries_crossed_gain_line",
+            "value": "59"
+          },
+          {
+            "stat": "carries_metres",
+            "value": "561"
+          },
+          {
+            "stat": "carries_not_made_gain_line",
+            "value": "62"
+          },
+          {
+            "stat": "clean_breaks",
+            "value": "15"
+          },
+          {
+            "stat": "defenders_beaten",
+            "value": "32"
+          },
+          {
+            "stat": "offload",
+            "value": "12"
+          },
+          {
+            "stat": "passes",
+            "value": "169"
+          },
+          {
+            "stat": "runs",
+            "value": "132"
+          },
+          {
+            "stat": "turnovers_conceded",
+            "value": "11"
+          }
+        ],
+        "defence": [
+          {
+            "stat": "missed_tackles",
+            "value": "25"
+          },
+          {
+            "stat": "tackles",
+            "value": "127"
+          },
+          {
+            "stat": "turnovers_won",
+            "value": "12"
+          }
+        ],
+        "discipline": [
+          {
+            "stat": "penalties_conceded",
+            "value": "11"
+          },
+          {
+            "stat": "red_card_second_yellow",
+            "value": "0"
+          },
+          {
+            "stat": "red_cards",
+            "value": "0"
+          },
+          {
+            "stat": "yellow_cards",
+            "value": "1"
+          }
+        ],
+        "kicking": [
+          {
+            "stat": "conversion_goals",
+            "value": "2"
+          },
+          {
+            "stat": "kicks_from_hand",
+            "value": "20"
+          },
+          {
+            "stat": "missed_conversion_goals",
+            "value": "1"
+          },
+          {
+            "stat": "missed_penalty_goals",
+            "value": "1"
+          },
+          {
+            "stat": "penalty_goals",
+            "value": "1"
+          }
+        ],
+        "breakdown": [
+          {
+            "stat": "mauls_lost",
+            "value": "0"
+          },
+          {
+            "stat": "mauls_total",
+            "value": "2"
+          },
+          {
+            "stat": "mauls_won",
+            "value": "2"
+          },
+          {
+            "stat": "mauls_won_penalty",
+            "value": "1"
+          },
+          {
+            "stat": "mauls_won_try",
+            "value": "0"
+          },
+          {
+            "stat": "rucks_lost",
+            "value": "7"
+          },
+          {
+            "stat": "rucks_total",
+            "value": "93"
+          },
+          {
+            "stat": "rucks_won",
+            "value": "86"
+          }
+        ],
+        "lineouts": [
+          {
+            "stat": "lineout_success",
+            "value": "0.91"
+          },
+          {
+            "stat": "lineout_won_steal",
+            "value": "0"
+          },
+          {
+            "stat": "lineouts_Lost",
+            "value": "1"
+          },
+          {
+            "stat": "lineouts_won",
+            "value": "10"
+          }
+        ],
+        "scrums": [
+          {
+            "stat": "scrums_lost",
+            "value": "0"
+          },
+          {
+            "stat": "scrums_success",
+            "value": "1.00"
+          },
+          {
+            "stat": "scrums_won",
+            "value": "4"
+          }
+        ],
+        "possession": [
+          {
+            "stat": "possession",
+            "value": "0.50"
+          },
+          {
+            "stat": "pc_possession_first",
+            "value": "0.50"
+          },
+          {
+            "stat": "pc_possession_second",
+            "value": "0.50"
+          },
+          {
+            "stat": "ball_possession_last_10_mins",
+            "value": "0.39"
+          }
+        ]
+      }
+    },
+    "events": [
+      {
+        "event_id": 13813187,
+        "time": 1,
+        "team_id": 302,
+        "type": "Try",
+        "player_1_name": "Shannon Frizell",
+        "player_1_id": 157050,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813189,
+        "time": 2,
+        "team_id": 302,
+        "type": "Conversion",
+        "player_1_name": "Josh Ioane",
+        "player_1_id": 140352,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813191,
+        "time": 12,
+        "team_id": 305,
+        "type": "Try",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813193,
+        "time": 13,
+        "team_id": 305,
+        "type": "Conversion",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813195,
+        "time": 21,
+        "team_id": 302,
+        "type": "Penalty",
+        "player_1_name": "Josh Ioane",
+        "player_1_id": 140352,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813197,
+        "time": 23,
+        "team_id": 302,
+        "type": "Try",
+        "player_1_name": "Jona Nareki",
+        "player_1_id": 165168,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813199,
+        "time": 25,
+        "team_id": 302,
+        "type": "Conversion",
+        "player_1_name": "Josh Ioane",
+        "player_1_id": 140352,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813201,
+        "time": 28,
+        "team_id": 305,
+        "type": "Penalty",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813203,
+        "time": 40,
+        "team_id": 305,
+        "type": "Penalty",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813205,
+        "time": 53,
+        "team_id": 302,
+        "type": "Try",
+        "player_1_name": "Michael Collins",
+        "player_1_id": 120432,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813207,
+        "time": 60,
+        "team_id": 305,
+        "type": "Try",
+        "player_1_name": "George Bridge",
+        "player_1_id": 140028,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813209,
+        "time": 62,
+        "team_id": 305,
+        "type": "Conversion",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813211,
+        "time": 63,
+        "team_id": 305,
+        "type": "Try",
+        "player_1_name": "George Bridge",
+        "player_1_id": 140028,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813213,
+        "time": 64,
+        "team_id": 302,
+        "type": "Yellow card",
+        "player_1_name": "Sio Tomkinson",
+        "player_1_id": 141906,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813215,
+        "time": 74,
+        "team_id": 305,
+        "type": "Try",
+        "player_1_name": "Braydon Ennor",
+        "player_1_id": 168960,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813217,
+        "time": 75,
+        "team_id": 305,
+        "type": "Conversion",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813219,
+        "time": 14,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Joe Moody",
+        "player_1_id": 115806,
+        "player_2": "George Bower",
+        "player_2_id": 134226,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813221,
+        "time": 40,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Ayden Johnstone",
+        "player_1_id": 149652,
+        "player_2": "Dan Lienert-Brown",
+        "player_2_id": 125058,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813223,
+        "time": 40,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Jack Whetton",
+        "player_1_id": 120438,
+        "player_2": "Manaaki Selby-Rickit",
+        "player_2_id": 173436,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813225,
+        "time": 46,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Bryn Hall",
+        "player_1_id": 118824,
+        "player_2": "Mitchell Drummond",
+        "player_2_id": 126342,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813227,
+        "time": 48,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Tom Sanders",
+        "player_1_id": 130416,
+        "player_2": "Sione Havili Talitui",
+        "player_2_id": 175506,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813229,
+        "time": 49,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Siate Tokolahi",
+        "player_1_id": 131700,
+        "player_2": "Jeff Thwaites",
+        "player_2_id": 141582,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813231,
+        "time": 55,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Codie Taylor",
+        "player_1_id": 112860,
+        "player_2": "Andrew Makalio",
+        "player_2_id": 157056,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813233,
+        "time": 55,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Michael Alaalatoa",
+        "player_1_id": 132000,
+        "player_2": "Oli Jager",
+        "player_2_id": 147540,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813235,
+        "time": 55,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Jona Nareki",
+        "player_1_id": 165168,
+        "player_2": "Ngatungane Punivai",
+        "player_2_id": 185064,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813237,
+        "time": 55,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Pari Pari Parkinson",
+        "player_1_id": 152016,
+        "player_2": "Jesse Parete",
+        "player_2_id": 134028,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813239,
+        "time": 55,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Quinten Strange",
+        "player_1_id": 149664,
+        "player_2": "Luke Romano",
+        "player_2_id": 62514,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813241,
+        "time": 57,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Ash Dixon",
+        "player_1_id": 63900,
+        "player_2": "Liam Coltman",
+        "player_2_id": 102852,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813243,
+        "time": 62,
+        "team_id": 302,
+        "type": "Substitution",
+        "player_1_name": "Marino Mikaele-Tu'u",
+        "player_1_id": 149682,
+        "player_2": "Teariki Ben-Nicholas",
+        "player_2_id": 162096,
+        "home_or_away": "away"
+      },
+      {
+        "event_id": 13813245,
+        "time": 65,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Oli Jager",
+        "player_1_id": 147540,
+        "player_2": "Michael Alaalatoa",
+        "player_2_id": 132000,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813247,
+        "time": 74,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Braydon Ennor",
+        "player_1_id": 168960,
+        "player_2": "Leicester Fainga'anuku",
+        "player_2_id": 184710,
+        "home_or_away": "home"
+      },
+      {
+        "event_id": 13813249,
+        "time": 77,
+        "team_id": 305,
+        "type": "Substitution",
+        "player_1_name": "Richie Mo'unga",
+        "player_1_id": 126474,
+        "player_2": "Brett Cameron",
+        "player_2_id": 173526,
+        "home_or_away": "home"
+      }
+    ]
+  }
+}

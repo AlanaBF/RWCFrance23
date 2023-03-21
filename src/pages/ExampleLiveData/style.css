@@ -1,3 +1,7 @@
+--color-green: #78DCAA;
+
+
+
 .live-card-container {
   width: 100%;
   background: var(--bg-darkblue);
@@ -30,8 +34,8 @@
 }
 
 .live-venue{
-  color: #fff;
   margin: 0;
+  color: var(--color-green);
 }
 
 .live-content {
@@ -51,6 +55,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
+  color: var(--color-green);
 }
 
 .notification {
@@ -64,4 +69,12 @@
   justify-content: center;
   align-items: center;
   pointer-events: none;
+}
+
+.exampleHeading {
+  color: var(--color-lightblue);
+}
+
+.exampleTitle {
+  color: var(--color-green);
 }
