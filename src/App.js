@@ -8,6 +8,7 @@ import { Header, StickyFooter } from './components/index';
 // import TeamInfo from './pages/TeamInfo/TeamInfo.js';
 // import Matches from './pages/Matches/Matches.js';
 import { Home, NotFound, Teams, TeamInfo, Matches, LiveUpdates} from './pages/index';
+import ExampleUpdate from "./pages/ExampleLiveData/Example";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/teams/:id" element={<TeamInfo />} />
         <Route path="/matches" element={<Matches />} />
         <Route path="/liveupdates/:id" element={<LiveUpdates />} />
+        <Route path="/exampleupdate" element={<ExampleUpdate />} />
         <Route path='*' element={<NotFound />} />
       </Route>
     )

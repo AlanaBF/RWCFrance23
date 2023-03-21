@@ -44,12 +44,15 @@ function Header() {
               </LinkContainer>
               <LinkContainer to="/teams">
                 <Nav.Link >TEAMS</Nav.Link>
+                
               </LinkContainer>
+              <LinkContainer to="/exampleupdate">
+                <Nav.Link>Example Update</Nav.Link>
+                </LinkContainer>
+                  
               <NavDropdown className='ms-auto' title="MORE" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">LiveUpdates</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Something else</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
