@@ -47,7 +47,7 @@ function Header() {
                 
               </LinkContainer>
               <LinkContainer to="/exampleupdate">
-                <Nav.Link>Example Update</Nav.Link>
+                <Nav.Link>EXAMPLE</Nav.Link>
                 </LinkContainer>
                   
               <NavDropdown className='ms-auto' title="MORE" id="basic-nav-dropdown">
