@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import getLiveData from "./LiveMatch_Api";
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
-import liveMatchInfo from "./LiveMatchData.json"
 import { useParams } from 'react-router-dom';
 import './style.css';
 import Flags from '../../components/Flags/index'
@@ -9,7 +8,6 @@ import Flags from '../../components/Flags/index'
 const LiveUpdates = () => {
   const { id } = useParams()
   const [data, setData] = useState([]);
-  const [query, setQuery] = useState(id);
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState({ isError: false, message: 'Something went wrong...' });
 
@@ -18,7 +16,7 @@ const LiveUpdates = () => {
     const fetchLiveData = async () => {
       try {
         setLoading(true);
-        const response = await getLiveData(query);
+        const response = await getLiveData(id);
         setData(response.results)
         if (!response.results) {
           throw new Error(response)
@@ -33,7 +31,7 @@ const LiveUpdates = () => {
 
     fetchLiveData()
 
-  }, [query]);
+  }, []);
 
   console.log(data)
   return (
@@ -135,7 +133,7 @@ const LiveUpdates = () => {
                 <Row>
                   <Col xs={12} lg={12}>
                     <Container className="live-card-container"><h4>Event Stats: </h4>
-                      <div>{data.events?.map(event => <div key={event.events_id}>{event.player_1_name}, {event.time}, {event.type}</div>)}</div>
+                      <div>{data.events?.map(event => <div key={event.event_id}>{event.player_1_name}, {event.time}, {event.type}</div>)}</div>
                     </Container>
                   </Col>
                 </Row>

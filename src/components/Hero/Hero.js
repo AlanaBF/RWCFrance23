@@ -12,11 +12,11 @@ function HeroImage() {
                     <header style={{ paddingLeft: 0 }}>
                         <div
                             className='p-5 text-center bg-image'
-                            style={{ backgroundImage: `url(${hero})`, height: 400 }}
+                            style={{ display: 'flex', justifyContent:'center', alignItems:'center', backgroundImage: `url(${hero})`, height: 700, backgroundPosition: 'top', backgroundSize: 'cover' }}
                         >
-                            <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
+                            <div className='mask'>
                                 <div className='d-flex justify-content-center align-items-center h-100'>
-                                    <div className='text-white'>
+                                    <div className='text-white' style={{padding:'50px 100px', backgroundColor: 'rgba(0, 0, 0, 0.6)'}}>
                                         <h1 className='mb-3'>Rugby World Cup</h1>
                                         <h4 className='mb-3'>France 2023</h4>
                                         
