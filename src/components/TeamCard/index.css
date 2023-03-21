@@ -3,6 +3,8 @@
   background: #fff;
   margin: 3px 0;
   border-radius: 25px; 
+  display: flex;
+  align-items: center;
 }
 .card-body {
   height: auto;
@@ -10,7 +12,6 @@
 .team-card-teams {
   text-transform: uppercase;
 }
-
 .team-card-column {
   display: flex;
   flex-direction: column !important;
@@ -26,14 +27,14 @@
   justify-content: space-between;
 }
 .team-card-container h3 {
-  font-size: 30px;
+  font-size: 22px;
   margin: 0;
 }
 .team-card-container h4 {
-  font-size: 23px;
+  font-size: 18px;
 }
 .team-card-container h5 {
-  font-size: 22px;
+  font-size: 16px;
 }
 .team-card-container h6 {
   font-size: 14px;
