@@ -1,10 +1,9 @@
 import { useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { getFilterOptions as getTeamsNames } from "../Matches/Matches.js";
-import tempData from "../Matches/Fixtures.json";
 import "./index.css";
 import Pooling from "./standings";
-import contryCodes from "./countryCode.json";
+
 
 const Teams = () => {
   const [pools, setPools] = useState([]);

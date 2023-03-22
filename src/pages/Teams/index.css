@@ -1,19 +1,3 @@
-h2 {
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-h3 {
-  display: block;
-  -webkit-font-smoothing: antialiased;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
 .teams-page-container {
   background-color: var(--bg-blue);
   background-image: url('../../assets/images/backgroundShapes.png');
@@ -21,7 +5,6 @@ h3 {
   margin: 0;
   padding: 0;
 }
-
 .teams-title-container {
   background-color: var(--bg-blue);
   padding: 20px 0px;
@@ -30,8 +13,9 @@ h3 {
 .teams-title {
   width: 100%;
   color: #fff;
-  padding-left: 140.391px;
+  text-align: center;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .teams-content {
   padding-top: 30px;
@@ -96,5 +80,54 @@ h3 {
   .pools {
     grid-template-columns: repeat(1,1fr);
     
+  }
+}
+@media(max-width: 468px) {
+  .teams-title {
+    font-size: 28px;
+  }
+  .pools {
+    padding: 0px;
+    margin: 0px auto;
+  }
+  .teams-banner {
+    position: relative;
+    min-width: 100%;
+    height: 58vh;
+  }
+  .teams-banner-content {
+    left: 50%;
+    padding: 20px;
+    top: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .teams-banner-content h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .teams-banner-content h2 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: block;
+    text-align: center;
+  }
+  .teams-hero {
+    width: 550px;
+    height: 200px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: clip;
   }
 }
