@@ -1,4 +1,4 @@
-const axios = require("axios");
+import axios from "axios";
 
 const getPools = async () => {
   const options = {
@@ -10,13 +10,14 @@ const getPools = async () => {
     },
   };
 
-  axios
+  return await axios
     .request(options)
     .then(function (response) {
-      console.log(response.data);
+      return response.data
     })
     .catch(function (error) {
       console.error(error);
+      return error
     });
 };
 export default getPools;

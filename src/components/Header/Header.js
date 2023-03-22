@@ -2,7 +2,6 @@ import './styles.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Counter from './Counter/Counter.js';
 import { LinkContainer } from 'react-router-bootstrap';
 import rwc2023logo from '../../assets/images/rwc2023logo.svg'
@@ -49,16 +48,6 @@ function Header() {
               <LinkContainer to="/exampleupdate">
                 <Nav.Link>EXAMPLE</Nav.Link>
                 </LinkContainer>
-                  
-              <NavDropdown className='ms-auto' title="MORE" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">LiveUpdates</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Something else</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
-              </NavDropdown>
             </Nav>
           </Navbar.Collapse>
         </Container>

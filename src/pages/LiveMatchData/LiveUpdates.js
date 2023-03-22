@@ -3,7 +3,7 @@ import getLiveData from "./LiveMatch_Api";
 import { Container, Row, Col, Spinner } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import './style.css';
-import Flags from '../../components/Flags/index'
+import Flags from '../../components/Flags'
 
 const LiveUpdates = () => {
   const { id } = useParams()
@@ -31,7 +31,7 @@ const LiveUpdates = () => {
 
     fetchLiveData()
 
-  }, []);
+  }, [id]);
 
   console.log(data)
   return (

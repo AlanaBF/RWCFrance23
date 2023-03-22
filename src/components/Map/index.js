@@ -1,19 +1,16 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useState, useEffect } from "react";
 import venues from "./venues.json";
 import "leaflet/dist/leaflet.css";
-import { map } from "leaflet";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 import Card from "../Card/VenueCard";
 import "./index.css";
-import { width } from "@mui/system";
 
 function Map() {
   let slogan = (
     <h1>All Venues</h1>
   );
-  const [ zoom, setZoom] = useState(5)
+
   return (
     <div className="venues">
       <div className="slogan">
@@ -21,7 +18,7 @@ function Map() {
       </div>
       <MapContainer
         center={[47.32545032413824, 2.5233774686971278]}
-        zoom={zoom}
+        zoom={5}
         scrollWheelZoom={false}
       >
         <TileLayer
