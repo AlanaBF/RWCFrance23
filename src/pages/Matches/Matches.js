@@ -21,23 +21,23 @@ const Matches = () => {
 
   useEffect(() => {
 
-    // const fetchMatches = async () => {
-    //   try {
-    //     setLoading(true);
-    //     const data = await getMatches();
-    //     setData(data.results)
-    //     if (!data.results) {
-    //       throw new Error(data)
-    //     }
-    //     console.log(data)
-    //   } catch (error) {
-    //     setError({ isError: true, message: error.message })
-    //   } finally {
-    //     setLoading(false)
-    //   }
-    // }
+    const fetchMatches = async () => {
+      try {
+        setLoading(true);
+        const data = await getMatches();
+        setData(data.results)
+        if (!data.results) {
+          throw new Error(data)
+        }
+        console.log(data)
+      } catch (error) {
+        setError({ isError: true, message: error.message })
+      } finally {
+        setLoading(false)
+      }
+    }
 
-    // fetchMatches()
+    fetchMatches()
 
   }, []);
 
