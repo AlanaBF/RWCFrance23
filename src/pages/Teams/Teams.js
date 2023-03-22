@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
-import { Container, Row } from "react-bootstrap";
-import { getFilterOptions as getTeamsNames } from "../Matches/Matches.js";
+import { Container } from "react-bootstrap";
 import "./index.css";
 import Pooling from "./standings";
 
@@ -476,7 +475,7 @@ const Teams = () => {
     //   }
     // }
     // fetchMatches()
-  }, []);
+  }, [pooling.results.standings]);
  
 
   return (
