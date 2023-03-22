@@ -15,3 +15,17 @@
     color: #fff;
     text-align: center;
 }
+@media(max-width: 768px) {
+    .venues{
+        grid-template-columns: repeat(1,1fr);
+        padding: 30px 20px;
+    }
+    .venues .slogan {
+        padding: 20px 0px;
+        width: 90% !important;
+    }
+    .leaflet-container {
+        border-radius: 25px;
+        height: 50vh;
+    }
+}
