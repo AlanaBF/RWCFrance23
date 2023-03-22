@@ -116,6 +116,9 @@
   }
 }
 @media(max-width: 765px) {
+  .teams-banner {
+    height: 50vh;
+  }
   .teams-title {
     font-size: 28px;
   }
@@ -123,13 +126,10 @@
     padding: 0px;
     margin: 0px auto;
   }
-  .teams-banner {
-    height: 58vh;
-  }
   .teams-banner-content {
     left: 50%;
     padding: 20px;
-    top: 70%;
+    top: 300px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -147,7 +147,7 @@
     text-align: center;
   }
   .teams-hero {
-    width: 550px;
+    width: 600px;
     height: 200px;
     position: absolute;
     right: 0;
@@ -155,3 +155,13 @@
     overflow: clip;
   }
 }
+/* @media(min-width: 389px) {
+  .teams-banner {
+    height: 44vh;
+  }
+}
+@media(max-width: 389px) {
+  .teams-banner {
+    height: 58vh;
+  }
+} */

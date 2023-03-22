@@ -1,24 +1,27 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import venues from "./venues.json";
 import "leaflet/dist/leaflet.css";
+import { map } from "leaflet";
 import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css";
 import "leaflet-defaulticon-compatibility";
 import Card from "../Card/VenueCard";
 import "./index.css";
+import { width } from "@mui/system";
 
 function Map() {
   let slogan = (
-    <h1>Get in the game with ease! Explore venues with just one click on the map</h1>
+    <h1>All Venues</h1>
   );
+  const [ zoom, setZoom] = useState(5)
   return (
     <div className="venues">
       <div className="slogan">
           {slogan}
       </div>
       <MapContainer
-        center={[46.41667656076642, 2.6462079034383494]}
-        zoom={5}
+        center={[47.32545032413824, 2.5233774686971278]}
+        zoom={zoom}
         scrollWheelZoom={false}
       >
         <TileLayer
@@ -28,12 +31,14 @@ function Map() {
 
         {venues.map((p) => {
           return (
+            <div onClick={() => console.log('works!')}>
               <Marker key={p.id} position={[p.longitude, p.latitude]}>
                 <Popup>
                   <Card venue={p} />
                   {/* {p.name} <br /> <b>{p.city}</b> */}
                 </Popup>
               </Marker>
+            </div>
           );
         })}
       </MapContainer>
