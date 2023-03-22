@@ -74,7 +74,7 @@
   display: grid;
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
-  padding: 50px 30px;
+  padding: 0px 30px;
 }
 @media(max-width: 1250px) {
   .pools {

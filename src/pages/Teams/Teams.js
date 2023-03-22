@@ -492,11 +492,6 @@ const Teams = () => {
         />
       </Container>
       <Container className="title" fluid>
-        <div className="teams-title-container">
-          <Container>
-            <h2 className="teams-title">All teams</h2>
-          </Container>
-        </div>
         <Container fluid className="pools">
           {pools.map((p) => (
             <Pooling
