@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
+import './styles.css';
 
 function Copyright() {
   return (
@@ -23,8 +24,7 @@ export default function StickyFooter() {
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        height: '100%',
-        minHeight: '15vh',
+        minHeight: '10vh',
       }}
     >
       <Box
