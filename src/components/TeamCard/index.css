@@ -75,7 +75,61 @@
   font-size: 2rem;
   font-weight: 500;
 }
-@media(max-width: 468px) {
+@media(max-width: 1250px) {
+  .pools {
+    grid-template-columns: repeat(1,1fr);
+    
+  }
+  .cvc {
+    border-right: 1px dashed  rgba(255, 255, 255, 0.2); 
+    justify-content: space-around;
+  }
+  .points-info {
+    margin: 0 auto;
+  }
+  .team-card-container h3 {
+    font-size: 34px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .team-card-container h5 {
+    font-size: 24px;
+  }
+  .team-card-container h6 {
+    font-size: 15px;
+    text-decoration: underline;
+    
+  }
+  .team-card-container span {
+    font-size: 14px;
+  }
+}
+@media(max-width: 970px) {
+  .team-card-container {
+    width: 100% !important;
+    margin: 0 auto;
+  }
+  .cvc {
+    justify-content: center;
+  }
+  .team-card-container h3 {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+  }
+  .team-card-container h5 {
+    font-size: 20px;
+  }
+  .team-card-container h6 {
+    font-size: 14px;
+    text-decoration: underline;
+    
+  }
+  .team-card-container span {
+    font-size: 14px;
+  }
+}
+@media(max-width: 765px) {
   .pool {
     display: flex;
     flex-direction: column;
@@ -94,6 +148,7 @@
   }
   .cvc {
     justify-content: center;
+    border-right: none !important; 
   }
   .team-card-container h3 {
     font-size: 26px;
