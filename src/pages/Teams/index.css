@@ -75,6 +75,11 @@
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
   padding: 0px 30px;
+  min-height: 60vh;
+}
+.spinner {
+  margin: 30px auto;
+  color: white;
 }
 @media(max-width: 1250px) {
   .pools {
