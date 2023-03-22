@@ -1,4 +1,4 @@
-# RWCF2023
+# RWCF2023 (Rugby World Cup France 2023)
 ## Description
 RWCF2023 is a React application built as the final project of a 16-week front-end development boot camp by a team of three developers, [Aleksandr Riabov](https://github.com/AleksandrRiabov), [Ainhoa Prada](https://github.com/nowinoa) and  [myself](https://github.com/AlanaBF). The application provides various details about the Rugby World Cup France 2023, including matches, teams, scores, live match updates, pools, venue maps, and filters. Additionally, there are links to the official shop and ticket sales pages.
 
@@ -11,8 +11,15 @@ The RWCF2023 application was built using:
 - react-router-dom
 - react-bootstrap
 - materialUi
-- leaflets
+- leaflet
 - Rugby Live Data and RugbyApi2 APIs
+
+[![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
+[![React-Router Badge](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](#)
+[![Bottstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](#)
+[![Mui Badge](https://img.shields.io/badge/Material%20UI-007FFF?style=for-the-badge&logo=mui&logoColor=white)](#)
+[![Moment.JS Badge](https://img.shields.io/badge/-Moment.JS-black?style=for-the-badge)](#)
+[![Leaflet Badge](https://img.shields.io/badge/-Leaflet-green?style=for-the-badge)](#)
 
 ## Features
 The RWCF2023 application includes the following features:
