@@ -12,7 +12,7 @@ function HeroImage() {
                     <header style={{ paddingLeft: 0 }}>
                         <div
                             className='p-5 text-center bg-image'
-                            style={{ display: 'flex', justifyContent:'center', alignItems:'center', backgroundImage: `url(${hero})`, height: 700, backgroundPosition: 'top', backgroundSize: 'cover' }}
+                            style={{ display: 'flex', justifyContent:'center', alignItems:'center', backgroundImage: `url(${hero})`, height: 600, backgroundPosition: 'top', backgroundSize: 'cover' }}
                         >
                             <div className='mask'>
                                 <div className='d-flex justify-content-center align-items-center h-100'>

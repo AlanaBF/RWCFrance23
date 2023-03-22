@@ -66,3 +66,11 @@
   align-items: center;
   pointer-events: none;
 }
+
+.liveHeading {
+  color: var(--color-lightblue);
+}
+
+.liveTitle {
+  color: var(--color-green);
+}
