@@ -3,7 +3,6 @@ import { Container, Row } from "react-bootstrap";
 import "./standigns.css";
 import TeamCard from "../../components/TeamCard";
 import fixtures from "../Matches/Fixtures.json";
-import countryCode from "./countryCode.json";
 
 const Pooling = ({ pool_name, teamsCard }) => {
   const [data, setData] = useState(fixtures.results);
