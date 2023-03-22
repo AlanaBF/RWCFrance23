@@ -31,7 +31,7 @@ const LiveUpdates = () => {
 
     fetchLiveData()
 
-  }, []);
+  }, [id]);
 
   console.log(data)
   return (

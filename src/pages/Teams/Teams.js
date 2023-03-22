@@ -1,463 +1,29 @@
 import { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Container, Spinner } from "react-bootstrap";
 import "./index.css";
 import Pooling from "./standings";
 import getPools from '../../utils/api_pools';
 
 
 const Teams = () => {
-  // const pooling = {
-  //   "results": {
-  //     "comp_id": "1272",
-  //     "comp_name": "Rugby World Cup",
-  //     "season": "2024",
-  //     "standings": [
-  //       {
-  //         "table_name": "Pool A",
-  //         "teams": [
-  //           {
-  //             "position": 1,
-  //             "id": 1967,
-  //             "name": "France",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 2,
-  //             "id": 2873,
-  //             "name": "Italy",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 3,
-  //             "id": 8717,
-  //             "name": "Namibia",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 4,
-  //             "id": 2567,
-  //             "name": "New Zealand",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 5,
-  //             "id": 8417,
-  //             "name": "Uruguay",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "table_name": "Pool B",
-  //         "teams": [
-  //           {
-  //             "position": 1,
-  //             "id": 1817,
-  //             "name": "Ireland",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 2,
-  //             "id": 2870,
-  //             "name": "Romania",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 3,
-  //             "id": 2117,
-  //             "name": "Scotland",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 4,
-  //             "id": 2717,
-  //             "name": "South Africa",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 5,
-  //             "id": 2267,
-  //             "name": "Tonga",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "table_name": "Pool C",
-  //         "teams": [
-  //           {
-  //             "position": 1,
-  //             "id": 317,
-  //             "name": "Australia",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 2,
-  //             "id": 2879,
-  //             "name": "Fiji",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 3,
-  //             "id": 8567,
-  //             "name": "Georgia",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 4,
-  //             "id": 2891,
-  //             "name": "Portugal",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 5,
-  //             "id": 1517,
-  //             "name": "Wales",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "table_name": "Pool D",
-  //         "teams": [
-  //           {
-  //             "position": 1,
-  //             "id": 2417,
-  //             "name": "Argentina",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 2,
-  //             "id": 58739,
-  //             "name": "Chile",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 3,
-  //             "id": 1667,
-  //             "name": "England",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 4,
-  //             "id": 9017,
-  //             "name": "Japan",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           },
-  //           {
-  //             "position": 5,
-  //             "id": 2867,
-  //             "name": "Samoa",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           }
-  //         ]
-  //       },
-  //       {
-  //         "table_name": "RWC 2023 Pool B",
-  //         "teams": [
-  //           {
-  //             "position": 4,
-  //             "id": 2888,
-  //             "name": "Spain",
-  //             "played": 0,
-  //             "won": 0,
-  //             "drawn": 0,
-  //             "lost": 0,
-  //             "tries_for": 0,
-  //             "tries_against": 0,
-  //             "tries_diff": 0,
-  //             "points_for": 0,
-  //             "points_against": 0,
-  //             "points_diff": 0,
-  //             "try_bonus": 0,
-  //             "losing_bonus": 0,
-  //             "bye_bonus": 0,
-  //             "points": 0
-  //           }
-  //         ]
-  //       }
-  //     ]
-  //   }
-  // }
+
   const [data, setData] = useState([])
   const [pools, setPools] = useState([]);
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState({ isError: false, message: 'Something went wrong...' });
 
-
+  //Fetch data
   useEffect(() => {
-//Get pools
+    //Get pools
     const fetchMatches = async () => {
       try {
         setLoading(true);
         const data = await getPools();
-        setData(data.results)
-        console.log(data)
+        setData(data.results.standings)
         if (!data.results) {
-          throw new Error(data)
           console.log('on error')
+          throw new Error(data)
         }
-        console.log(data)
       } catch (error) {
         setError({ isError: true, message: error.message })
       } finally {
@@ -465,26 +31,32 @@ const Teams = () => {
       }
     }
     fetchMatches()
-    getPools()
   }, []);
 
-  // const allPools = data.map((pool) => ({
-  //   name: pool.table_name,
-  //   teams: pool.teams.map((team) => ({
-  //     name: team.name,
-  //     played: team.played,
-  //     points: team.points,
-  //     position: team.position,
-  //     id: team.id
-  //   })),
-  // }));
-  // //order pools with ranking position
-  // const sortedPools = allPools.map((pool) => ({
-  //   ...pool,
-  //   teams: pool.teams.sort((teamA, teamB) => teamA.position - teamB.position),
-  // }));
-  // const slicePools = sortedPools.slice(0, 4);
-  // setPools(slicePools);
+
+  // Combine two responses
+  useEffect(() => {
+    const allPools = data.map((pool) => ({
+      name: pool.table_name,
+      teams: pool.teams.map((team) => ({
+        name: team.name,
+        played: team.played,
+        points: team.points,
+        position: team.position,
+        id: team.id
+      })),
+    }));
+    //order pools with ranking position
+    const sortedPools = allPools.map((pool) => ({
+      ...pool,
+      teams: pool.teams.sort((teamA, teamB) => teamA.position - teamB.position),
+    }));
+    const slicePools = sortedPools.slice(0, 4);
+    setPools(slicePools);
+  }, [data])
+
+
+
   return (
     <Container fluid className="teams-page-container">
       <Container className="teams-banner">
@@ -500,13 +72,18 @@ const Teams = () => {
       </Container>
       <Container className="title" fluid>
         <Container fluid className="pools">
-          {pools.map((p) => (
-            <Pooling
-              pool_name={p.name}
-              teamsCard={p.teams}
-              key={p.name}
-            />
-          ))}
+          {loading ?
+            <div><Spinner /></div> :
+            error.isError ?
+              <div><h4>{error.message}</h4></div> :
+              pools.map((p) => (
+                <Pooling
+                  pool_name={p.name}
+                  teamsCard={p.teams}
+                  key={p.name}
+                />
+              ))
+          }
         </Container>
       </Container>
     </Container>
