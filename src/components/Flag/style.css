@@ -1,0 +1,124 @@
+.ARGENTINA {
+    background: url(./assets/flags.png) -100px 0px no-repeat;
+    width: 50px;
+    height:65px;}
+
+.AUSTRALIA {
+    background: url(./assets/flags.png) -100px -65px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.CHILE {
+    background: url(./assets/flags.png) -250px -195px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.ENGLAND {
+    background: url(./assets/flags.png) -350px -130px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.FIJI {
+    background: url(./assets/flags.png) 0 -325px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.FRANCE {
+    background: url(./assets/flags.png) -150px -325px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.GEORGIA {
+    background: url(./assets/flags.png) -200px -325px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.JAPAN {
+    background: url(./assets/flags.png) -50px -390px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.ITALY {
+    background: url(./assets/flags.png) -450px -260px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.IRELAND {
+    background: url(./assets/flags.png) -450px -65px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.NAMIBIA {
+    background: url(./assets/flags.png) -300px -455px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.NEW-ZEALAND {
+    background: url(./assets/flags.png) -550px -65px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.PORTUGAL {
+    background: url(./assets/flags.png) -50px -520px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.ROMANIA {
+    background: url(./assets/flags.png) -200px -520px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.SAMOA {
+    background: url(./assets/flags.png) -400px -520px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.SCOTLAND {
+    background: url(./assets/flags.png) -450px -520px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.SOUTH-AFRICA {
+    background: url(./assets/flags.png) -250px -520px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.TONGA {
+    background: url(./assets/flags.png) -0 -585px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.URUGUAY {
+    background: url(./assets/flags.png) -550px -585px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.WALES {
+    background: url(./assets/flags.png) -650px -260px no-repeat;
+    width: 50px;
+    height:65px;
+}
+
+.TBC {
+    background: url(./assets/flags.png) -650px -455px no-repeat;
+    width: 50px;
+    height:65px;
+}
