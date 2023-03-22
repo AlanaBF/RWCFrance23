@@ -1,5 +1,5 @@
 import { Container, Row, Col } from "react-bootstrap";
-import Flags from '../Flags'
+import Flags from '../../components/Flag'
 import "./index.css";
 // import moment from "moment-timezone";
 
