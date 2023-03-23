@@ -16,7 +16,6 @@ const getPools = async () => {
       return response.data
     })
     .catch(function (error) {
-      console.error(error);
       return error
     });
 };

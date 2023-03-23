@@ -28,14 +28,12 @@ function NewsCarousel() {
           isError: true,
           message: error.message
         })
-        console.log(error);
+  
       } finally {
         setLoading(false)
       }
     }
   }, []);
-
-  console.log(news)
 
   const renderCarouselItem = news.map(article => {
     return (

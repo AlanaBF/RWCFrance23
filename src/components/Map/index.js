@@ -27,7 +27,7 @@ function Map() {
         />
 
         {venues.map((p) => {
-          console.log(p.id)
+
           return (
             <div key={p.id}>
               <Marker  position={[p.longitude, p.latitude]}>

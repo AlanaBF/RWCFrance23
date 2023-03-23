@@ -29,7 +29,6 @@ const Matches = () => {
         if (!data.results) {
           throw new Error(data)
         }
-        console.log(data)
       } catch (error) {
         setError({ isError: true, message: error.message })
       } finally {
