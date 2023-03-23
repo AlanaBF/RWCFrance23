@@ -1,9 +1,8 @@
 .teams-page-container {
   background-color: var(--bg-blue);
   background-image: url('../../assets/images/backgroundShapes.png');
-  height: 100%;
   margin: 0;
-  padding: 0;
+  padding-bottom: 30px;
 }
 .teams-title-container {
   background-color: var(--bg-blue);
