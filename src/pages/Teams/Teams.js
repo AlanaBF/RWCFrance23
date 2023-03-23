@@ -73,7 +73,9 @@ const Teams = () => {
       <Container className="title" fluid>
         <Container fluid className="pools">
           {loading ?
-            <div className="spinner"><Spinner /></div> :
+            <div className="spinner">
+            <Spinner />
+            </div> :
             error.isError ?
               <div><h4>{error.message}</h4></div> :
               pools.map((p) => (

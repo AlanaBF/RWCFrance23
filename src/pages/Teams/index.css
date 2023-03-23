@@ -2,6 +2,7 @@
   background-color: var(--bg-blue);
   background-image: url('../../assets/images/backgroundShapes.png');
   margin: 0;
+  padding: 0;
   padding-bottom: 30px;
 }
 .teams-title-container {
@@ -74,10 +75,16 @@
   grid-template-columns: repeat(2,1fr);
   gap: 20px;
   padding: 0px 30px;
-  min-height: 60vh;
+  min-height: 40vh;
+  margin: 0 auto !important;
+  position: relative;
 }
 .spinner {
-  margin: 30px auto;
+  position: absolute;
+  display: block;
+  top: 20%;
+  right: 50%;
+  z-index: 99;
   color: white;
 }
 @media(max-width: 1250px) {
