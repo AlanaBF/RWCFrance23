@@ -36,6 +36,13 @@ The RWCFrance23 application includes the following features:
 ## Deployment
 The RWCFrance23 application is currently deployed on Netlify. The site is automatically deployed every time a commit is pushed to the main branch of the GitHub repository.
 
+## Screenshots
+![alt text](./src/assets/images/Screenshots/Screenshot-Home1.png)
+![alt text](./src/assets/images/Screenshots/Screenshot-Home2.png)
+![alt text](./src/assets/images/Screenshots/Screenshot-Teams.png)
+![alt text](./src/assets/images/Screenshots/Screenshot-Matches-Schedule.png)
+![alt text](./src/assets/images/Screenshots/Screenshot-Live-Updates.png)
+
 ## How to Use
 To use the RWCFrance23 application, simply visit the deployed site URL. From there, you can access all of the application's features.
 
