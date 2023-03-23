@@ -6,7 +6,7 @@ const getMatches = async () => {
     method: 'GET',
     url: 'https://rugby-live-data.p.rapidapi.com/fixtures/1272/2024',
     headers: {
-      'X-RapidAPI-Key': 'f6e85a3537msh16a1b454499b4afp16528ejsn68b2051e2547',
+      'X-RapidAPI-Key': 'd2693575e6msh2b618f6d60d310ap1fd4e8jsn5c9a6c6b4ae7',
       'X-RapidAPI-Host': 'rugby-live-data.p.rapidapi.com'
     }
   };
