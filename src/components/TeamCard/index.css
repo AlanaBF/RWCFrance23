@@ -103,6 +103,11 @@
   .team-card-container span {
     font-size: 14px;
   }
+  .position span {
+    color: var(--color-darkblue);
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 @media(max-width: 970px) {
   .team-card-container {
@@ -127,6 +132,11 @@
   }
   .team-card-container span {
     font-size: 14px;
+  }
+  .position span {
+    color: var(--color-darkblue);
+    font-size: 2rem;
+    font-weight: 500;
   }
 }
 @media(max-width: 765px) {
@@ -171,4 +181,5 @@
     width: 85%;
     margin: 0 auto;
   }
+ 
 }
