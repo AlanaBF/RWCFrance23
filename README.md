@@ -15,6 +15,7 @@ The RWCFrance23 application was built using:
 - materialUi
 - leaflet
 - Rugby Live Data and RugbyApi2 APIs
+- Bing news API
 
 [![React Badge](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)](#)
 [![React-Router Badge](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)](#)
