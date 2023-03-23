@@ -19,16 +19,16 @@ function NewsCarousel() {
       setLoading(true)
       try {
         const response = await getNews()
-        if (!response.data) {
+        if (!response) {
           throw new Error(response)
         }
-        setNews(response.data.value)
+        setNews(response.value)
       } catch (error) {
         setError({
           isError: true,
           message: error.message
         })
-        console.error(error);
+        console.log(error);
       } finally {
         setLoading(false)
       }
@@ -42,7 +42,7 @@ function NewsCarousel() {
       <Carousel.Item key={article.name}>
         <div className="new">
           <img
-            src={article?.image?.thumbnail?.contentUrl || RWClogo}
+            src={article?.image?.contentUrl || RWClogo}
             alt={article.name}
           />
           <div className="new-content">

@@ -21,7 +21,6 @@ const LiveUpdates = () => {
         if (!response.results) {
           throw new Error(response)
         }
-        console.log(response)
       } catch (error) {
         setError({ isError: true, message: error.message })
       } finally {
@@ -33,7 +32,6 @@ const LiveUpdates = () => {
 
   }, [id]);
 
-  console.log(data)
   return (
     <Container fluid className="live-page-container">
       <div>

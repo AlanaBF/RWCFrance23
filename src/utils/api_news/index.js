@@ -1,33 +1,32 @@
 import axios from "axios";
 async function getNews() {
   const options = {
-    method: "GET",
-    url: "https://bing-news-search1.p.rapidapi.com/news/search",
+    method: 'GET',
+    url: 'https://bing-news-search1.p.rapidapi.com/news/search',
     params: {
-      q: "rugby world cup",
-      count: "3",
-      sortBy: "Date",
-      setLang: "en",
-      freshness: "Day",
-      textFormat: "Raw",
-      safeSearch: "Off",
+      q: 'world cup rugby',
+      count: '3',
+      sortBy: 'Date',
+      setLang: 'en',
+      freshness: 'Day',
+      originalImg: 'true',
+      textFormat: 'Raw',
+      safeSearch: 'Off'
     },
     headers: {
-      "X-BingApis-SDK": "true",
-      "X-RapidAPI-Key": "60e53c0caamsh79aaf583e2d534dp19d614jsn29e8c6116073",
-      "X-RapidAPI-Host": "bing-news-search1.p.rapidapi.com",
-    },
+      'X-BingApis-SDK': 'true',
+      'X-RapidAPI-Key': 'db60a21bf6msh0c7c9e1851c4408p1d3b11jsnca09255a288c',
+      'X-RapidAPI-Host': 'bing-news-search1.p.rapidapi.com'
+    }
   };
+  
+  return await axios.request(options).then(function (response) {
+    return response.data
+  }).catch(function (error) {
+    console.error(error);
+    return error
+  });
 
-  return await axios
-    .request(options)
-    .then(function (response) {
-      console.log(response)
-      return response;
-    })
-    .catch(function (error) {
-      console.error('Here we found this: ' + error);
-      return error
-    });
+ 
 }
 export default getNews;

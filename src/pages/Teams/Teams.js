@@ -21,7 +21,7 @@ const Teams = () => {
         const data = await getPools();
         setData(data.results.standings)
         if (!data.results) {
-          console.log('on error')
+          
           throw new Error(data)
         }
       } catch (error) {
