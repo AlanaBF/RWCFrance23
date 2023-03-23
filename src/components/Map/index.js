@@ -29,10 +29,10 @@ function Map() {
         {venues.map((p) => {
           console.log(p.id)
           return (
-            <div>
-              <Marker key={p.id} position={[p.longitude, p.latitude]}>
+            <div key={p.id}>
+              <Marker  position={[p.longitude, p.latitude]}>
                 <Popup>
-                  <Card venue={p} key={p.id}/>
+                  <Card venue={p}/>
                 </Popup>
               </Marker>
             </div>
