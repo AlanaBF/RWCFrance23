@@ -63,3 +63,5 @@ We welcome contributions to the RWCFrance23 application! To contribute, please f
 
 ## License
 The RWCFrance23 application is released under the MIT License.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
