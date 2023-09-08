@@ -2,7 +2,7 @@ import './styles.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import Counter from './Counter/Counter.js';
+// import Counter from './Counter/Counter.js';
 import { LinkContainer } from 'react-router-bootstrap';
 import rwc2023logo from '../../assets/images/rwc2023logo.svg'
 
@@ -13,7 +13,7 @@ function Header() {
 
   return (
     <Container fluid className='p-0'>
-      <Counter />
+      {/* <Counter /> */}
       <Navbar expand="lg">
         <Container>
           <LinkContainer to="/">
@@ -45,9 +45,9 @@ function Header() {
                 <Nav.Link >TEAMS</Nav.Link>
                 
               </LinkContainer>
-              <LinkContainer to="/exampleupdate">
+              {/* <LinkContainer to="/exampleupdate">
                 <Nav.Link>EXAMPLE</Nav.Link>
-                </LinkContainer>
+                </LinkContainer> */}
             </Nav>
           </Navbar.Collapse>
         </Container>

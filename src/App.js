@@ -1,7 +1,7 @@
 import { createHashRouter, createRoutesFromElements, RouterProvider, Outlet, Route } from "react-router-dom";
 import { Header, StickyFooter } from './components/index';
 import { Home, NotFound, Teams, Matches, LiveUpdates } from './pages/index';
-import ExampleUpdate from "./pages/ExampleLiveData/Example";
+// import ExampleUpdate from "./pages/ExampleLiveData/Example";
 
 const App = () => {
   const router = createHashRouter(
@@ -11,7 +11,7 @@ const App = () => {
         <Route path="/teams" element={<Teams />} />
         <Route path="/matches" element={<Matches />} />
         <Route path="/liveupdates/:id" element={<LiveUpdates />} />
-        <Route path="/exampleupdate" element={<ExampleUpdate />} />
+        {/* <Route path="/exampleupdate" element={<ExampleUpdate />} /> */}
         <Route path='*' element={<NotFound />} />
       </Route>
     )
