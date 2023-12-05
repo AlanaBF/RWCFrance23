@@ -1,4 +1,4 @@
-import NewsCarousel from '../../components/carousel';
+//import NewsCarousel from '../../components/carousel';
 import Shop from '../../components/Shop/Shop';
 import getNews from '../../utils/api_news';
 import './index.css';
@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className='home'>
       <HeroImage />
-      <NewsCarousel />
+      {/* <NewsCarousel /> */}
       <Shop />
       <Map />
 
